@@ -15,7 +15,7 @@ body {
 }
 
 .body-div {
-  height: 90%;
+  height: 100%;
   width: 100%;
   background: blue;
   overflow: hidden;
@@ -25,8 +25,8 @@ body {
   position: relative;
   top: 10vh;
   background: #7e97bc;
-  height: 130vh;
-  width: 70%;
+  min-height: 100vh;
+  width: 70vw;
   float: left;
   padding: 10px 10px;
   line-height: 25px;
@@ -36,8 +36,8 @@ body {
   position: relative;
   top: 10vh;
   background: #4e5166;
-  width: 30%;
-  height: 100vh;
+  width: 30vw;
+  min-height: 100vh;
   float: left;
 }
 .header-div {
@@ -56,22 +56,46 @@ body {
   height: 100%;
 }
 .header-div li {
+  padding: 20px;
   background: #657183;
   border: black solid 2px;
   border-radius: 5%;
   display: inline-block;
-  align-items: center;
   width: 15%;
-  margin-top: 3.5%;
+  height: 2.5rem;
+  margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%;
   text-align: center;
+}
+
+.header-div li:active {
+  transform: scale(0.9);
+}
+.header-div a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.header-div a:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.header-div li:hover a {
+  padding-right: 25px;
+}
+.header-div li:hover a:after {
+  opacity: 1;
+  right: 0;
 }
 .header-div a {
   display: block;
   color: black;
   text-decoration: none;
-}
-.header-div li:hover {
-  transform: scale(1.1);
 }
