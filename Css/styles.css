@@ -11,7 +11,7 @@ body {
 
 .page-div {
   width: 100vw;
-  background: red;
+  background: #774524;
 }
 
 .body-div {
@@ -23,30 +23,34 @@ body {
 
 .content-div {
   position: relative;
-  top: 10vh;
-  background: #fefefe;
-  min-height: 100vh;
-  width: 70vw;
+  background: #dacab3;
+  min-height: 150vh;
+  width: 75vw;
   float: left;
   padding: 10px 10px;
   line-height: 25px;
   word-spacing: 5px;
 }
 .information-div {
-  color: #fefefe;
-  position: relative;
-  top: 10vh;
-  background: #3b2d60;
-  width: 30vw;
-  min-height: 100vh;
+  color: #dacab3;
+  position: fixed;
+  right: 0;
+  background: #382819;
+  width: 25vw;
+  height: 100vh;
   float: left;
 }
+.information-div h4,
+h2 {
+  display: block;
+  clear: both;
+}
 .header-div {
-  z-index: 1000;
+  z-index: 5;
   position: fixed;
-  top: 0;
+  bottom: 100vh;
   right: 0;
-  background: #b784e7;
+  background: #774524;
   height: 10vh;
   width: 100vw;
 }
@@ -58,8 +62,8 @@ body {
 }
 .header-div li {
   padding: 0.5rem 20px;
-  background: #e8d7f7;
-  border: #3b2d60 solid 2px;
+  background: #dacab3;
+  border: #382819 solid 2px;
   border-radius: 5%;
   display: inline-block;
   width: 15%;
@@ -97,6 +101,43 @@ body {
 }
 .header-div a {
   display: block;
-  color: #3b2d60;
+  color: #382819;
   text-decoration: none;
+}
+.nav-icon {
+  z-index: 4;
+  background: url("../Imagenes/bars.png");
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+.checkb {
+  opacity: 0;
+  z-index: 6;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+input:checked ~ .header-div {
+  transform: translateY(11vh);
+}
+input:checked ~ .content-div,
+input:checked ~ .information-div {
+  transform: translateY(9vh);
+}
+input:disabled ~ .header-div {
+  transform: translateY(-11vh);
+}
+input:checked ~ .nav-icon {
+  background: url("../Imagenes/cross.png");
+  z-index: 7;
+}
+input:checked {
+  z-index: 8;
 }
