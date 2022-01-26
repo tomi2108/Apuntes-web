@@ -6,7 +6,7 @@
 }
 body {
   position: relative;
-  background: grey;
+  background: #774524;
 }
 
 .page-div {
@@ -53,6 +53,7 @@ h2 {
   background: #774524;
   height: 10vh;
   width: 100vw;
+  transition: 0.5s;
 }
 .header-div ul {
   text-align: center;
