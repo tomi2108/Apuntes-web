@@ -63,12 +63,15 @@ h2 {
   height: 100%;
 }
 .header-div li {
-  padding: 0.5rem 20px;
+  position: static;
+  bottom: 10vh;
+  transition: 0.2s;
+  padding: 0.5rem 0.2rem;
   background: #dacab3;
   border: #382819 solid 2px;
   border-radius: 5%;
   display: inline-block;
-  width: 15%;
+  width: 12%;
   height: 2.5rem;
   margin-top: 2%;
   margin-left: 3%;
@@ -76,14 +79,14 @@ h2 {
   text-align: center;
 }
 
-.header-div li:active {
-  transform: scale(0.9);
+.header-div ul li:hover {
+  box-shadow: 0 5px #53311a;
+  transform: translateY(-5px);
 }
 .header-div a {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
 }
 
 .header-div a:after {
@@ -94,8 +97,9 @@ h2 {
   right: -20px;
   transition: 0.5s;
 }
+
 .header-div li:hover a {
-  padding-right: 25px;
+  padding-right: 0.3rem;
 }
 .header-div li:hover a:after {
   opacity: 1;
@@ -106,7 +110,8 @@ h2 {
   color: #382819;
   text-decoration: none;
 }
-.nav-icon {
+.nav-icon-bars {
+  transition: 0.5s;
   z-index: 4;
   background: url("../Imagenes/bars.png");
   display: inline-block;
@@ -116,6 +121,18 @@ h2 {
   width: 40px;
   height: 40px;
 }
+.nav-icon-cross {
+  transition: 0.5s;
+  z-index: 7;
+  background: url("../Imagenes/cross.png");
+  display: inline-block;
+  position: fixed;
+  top: -40px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+
 .checkb {
   opacity: 0;
   z-index: 6;
@@ -126,20 +143,23 @@ h2 {
   height: 40px;
   width: 40px;
 }
-input:checked ~ .header-div {
-  transform: translateY(10vh);
-}
+
+input:checked ~ .header-div,
 input:checked ~ .content-div,
 input:checked ~ .information-div {
+  transition: all 0.5s 0s ease;
   transform: translateY(9vh);
 }
-input:disabled ~ .header-div {
-  transform: translateY(-11vh);
-}
-input:checked ~ .nav-icon {
-  background: url("../Imagenes/cross.png");
+input:checked ~ .nav-icon-bars {
+  transform: translateY(-40px);
   z-index: 7;
+}
+input:checked ~ .nav-icon-cross {
+  transform: translateY(40px);
 }
 input:checked {
   z-index: 8;
+}
+input:disabled ~ .header-div {
+  transform: translateY(-10vh);
 }
