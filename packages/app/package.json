@@ -1,0 +1,36 @@
+{
+  "name": "apuntes-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "eslint": "eslint ."
+  },
+  "dependencies": {
+    "axios": "^1.3.5",
+    "fs": "^0.0.1-security",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.6",
+    "rehype-katex": "^6.0.2",
+    "remark-math": "^5.1.1",
+    "vite-plugin-fs": "^1.0.0-beta.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
