@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "scripts": {
+    "dev": "cd packages && cd api && npm run dev"
+  },
   "workspaces": [
     "packages/*"
   ],
