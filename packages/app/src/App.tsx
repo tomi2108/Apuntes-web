@@ -2,9 +2,9 @@ import { createContext } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Folder } from "../types";
 import { useArticles } from "./hooks/useArticles";
-import Articles from "./routes/Articles";
+import ArticleViewer from "./routes/ArticleViewer";
 import Home from "./routes/Home";
-import Subjects from "./routes/Subjects";
+import Subjects from "./routes/Subjects/Subjects";
 
 export const AppContext = createContext<{ articles: Folder[] | null }>({
   articles: []
@@ -23,8 +23,8 @@ const App = () => {
       element: <Subjects folders={articles?.map((a) => a.folder) ?? []} />
     },
     {
-      path: "/subjects/:folder",
-      element: <Articles />
+      path: "/articles/:folder/:title",
+      element: <ArticleViewer />
     }
   ]);
 
