@@ -3,7 +3,6 @@ import { useEffect } from "react";
 export const useSlider = (elements: [Element | null, Element | null]) => {
   useEffect(() => {
     elements[1]?.setAttribute("data-closed", "");
-    console.log(elements[1], "setting closed");
   }, [elements[1]]);
 
   const viewSecondElement = () => {

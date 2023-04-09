@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Articles from "../../components/Articles";
+import Card from "../../components/Card/Card";
 import { useSlider } from "../../hooks/useSlider";
 import "./subjects.css";
 
@@ -34,23 +35,15 @@ const Subjects = ({ folders }: SubjectsProps) => {
   return (
     <div className="container">
       <div className="folders">
-        <>
-          {folders
-            ? folders.map((folder) => {
-                return (
-                  <div key={folder}>
-                    <div onClick={() => handleFolderChange(folder)}>
-                      {folder}
-                    </div>
-                  </div>
-                );
-              })
-            : null}
-        </>
+        {folders
+          ? folders.map((folder) => {
+              return <Card text={folder} onClick={handleFolderChange} />;
+            })
+          : null}
       </div>
       <div className="articles">
+        <Card text="Back" onClick={handleBackButton} />
         <Articles folder={selectedFolder} />
-        <div onClick={handleBackButton}>Back</div>
       </div>
     </div>
   );

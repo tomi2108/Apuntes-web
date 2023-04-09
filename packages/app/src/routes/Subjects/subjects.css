@@ -1,35 +1,39 @@
 .container {
+  align-self: "flex-start";
   align-items: center;
   display: flex;
-  height: 90%;
+  min-height: 90%;
   justify-content: center;
-  overflow: hidden;
   position: relative;
   width: 100vw;
 }
 
 .folders {
-  align-items: center;
+  padding: 30px;
+  align-self: flex-start;
+  align-items: flex-start;
   animation: fade-in 1s, slide-from-left 1s;
   display: flex;
-  flex-direction: column;
+  row-gap: 20px;
+  column-gap: 30px;
   flex-wrap: wrap;
-  height: 90%;
   justify-content: center;
   position: absolute;
-  width: 1080px;
+  width: 50%;
 }
 
 .articles {
-  align-items: center;
+  padding: 30px;
+  align-self: flex-start;
+  align-items: flex-start;
   animation: fade-in 1s, slide-from-right 1s;
   display: flex;
-  flex-direction: column;
+  row-gap: 20px;
+  column-gap: 30px;
   flex-wrap: wrap;
-  height: 90%;
   justify-content: center;
   position: absolute;
-  width: 1080px;
+  width: 50%;
 }
 
 [data-closed] {
