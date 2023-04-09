@@ -1,5 +1,5 @@
 import { createServer } from "http";
-import api from "./api.js";
+import api from "./api";
 
 const server = createServer(api);
 const PORT = process.env.PORT || 3001;

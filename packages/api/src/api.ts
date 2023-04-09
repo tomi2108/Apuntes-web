@@ -4,8 +4,8 @@ import path from "path";
 
 const api = express();
 
-import articlesRouter from "./routes/articles.js";
-import { unknownEndpoint } from "./utils/middleware.js";
+import articlesRouter from "./routes/articles";
+import { unknownEndpoint } from "./utils/middleware";
 
 api.use(cors());
 

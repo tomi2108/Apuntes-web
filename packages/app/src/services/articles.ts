@@ -1,9 +1,11 @@
-import axios from "axios"
-import {host} from "services/controller"
+import axios from "axios";
+import { host } from "./controller";
 
-const url = `${host}/api/articles`
+const url = `${host}/api/articles`;
 
 const getArticles = async () => {
-   const articles = await axios.get(url)
-   return articles
-}
+  const response = await axios.get(url);
+  return response.data;
+};
+
+export { getArticles };

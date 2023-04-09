@@ -1,17 +1,17 @@
-import fs from "fs"
-import { Directory, MarkdownFile } from "../types";
+import fs from "fs";
+import { MarkdownFile } from "../types";
 
-const markdownPath = "./markdown"
+const markdownPath = "./markdown";
 
 const getDirectories = () => {
-  const files = fs.readdirSync(`${markdownPath}`)
+  const files = fs.readdirSync(`${markdownPath}`);
 
   return files.map((f) => {
     return { folder: f, files: getFiles(f) };
   });
-}
+};
 
-const getFiles = (folder:string): Array<MarkdownFile> => {
+const getFiles = (folder: string): Array<MarkdownFile> => {
   const markdownFiles = fs.readdirSync(`${markdownPath}/${folder}`);
 
   return markdownFiles.map((f) => {
@@ -19,9 +19,8 @@ const getFiles = (folder:string): Array<MarkdownFile> => {
   });
 };
 
-const getContent = (folder:string,fileName:string) => {
-  return fs.readFileSync(`${markdownPath}/${folder}/${fileName}`).toString()
-}
+const getContent = (folder: string, fileName: string) => {
+  return fs.readFileSync(`${markdownPath}/${folder}/${fileName}`).toString();
+};
 
-
-export {getDirectories}
+export { getDirectories };

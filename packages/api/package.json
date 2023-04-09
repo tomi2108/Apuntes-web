@@ -6,9 +6,9 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node build/index.js",
     "test": "cross-env NODE_ENV=test jest --verbose",
-    "dev": "npm run build && npm run start",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.ts",
     "build": "rm -r build && rm -r dist && rm tsconfig.tsbuildinfo && tsc --project ./tsconfig.json &&  cd ../app && npm run build && cp -r dist ../api && rm -r dist",
-    "build-api":"tsc --project ./tsconfig.json ",
+    "build-api": "tsc --project ./tsconfig.json ",
     "eslint": "eslint ."
   },
   "keywords": [],
@@ -28,7 +28,9 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
     "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
   "author": "",

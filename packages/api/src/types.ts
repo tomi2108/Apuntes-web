@@ -1,10 +1,10 @@
-export type Directories = Array<Directory>
+export type Directories = Array<Directory>;
 
 export type Directory = {
-  folder:string,
-  files: Array<MarkdownFile>
-}
+  folder: string;
+  files: Array<MarkdownFile>;
+};
 export type MarkdownFile = {
-  title: string
+  title: string;
   content: string;
 };
