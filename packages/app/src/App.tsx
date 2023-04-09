@@ -4,6 +4,7 @@ import { Folder } from "../types";
 import { useArticles } from "./hooks/useArticles";
 import ArticleViewer from "./routes/ArticleViewer";
 import Home from "./routes/Home";
+import NavbarWrapper from "./routes/NavbarWrapper";
 import Subjects from "./routes/Subjects/Subjects";
 
 export const AppContext = createContext<{ articles: Folder[] | null }>({
@@ -16,15 +17,21 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />
-    },
-    {
-      path: "/subjects",
-      element: <Subjects folders={articles?.map((a) => a.folder) ?? []} />
-    },
-    {
-      path: "/articles/:folder/:title",
-      element: <ArticleViewer />
+      element: <NavbarWrapper />,
+      children: [
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/subjects",
+          element: <Subjects folders={articles?.map((a) => a.folder) ?? []} />
+        },
+        {
+          path: "/articles/:folder/:title",
+          element: <ArticleViewer />
+        }
+      ]
     }
   ]);
 

@@ -1,7 +1,7 @@
 .container {
   align-items: center;
   display: flex;
-  height: 100vh;
+  height: 90%;
   justify-content: center;
   overflow: hidden;
   position: relative;
