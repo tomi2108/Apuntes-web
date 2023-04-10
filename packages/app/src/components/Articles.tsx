@@ -5,9 +5,10 @@ import Card from "./Card/Card";
 
 type ArticlesProps = {
   folder: string;
+  isDisabled: boolean;
 };
 
-const Articles = ({ folder }: ArticlesProps) => {
+const Articles = ({ folder, isDisabled }: ArticlesProps) => {
   const { articles } = useContext(AppContext);
   const navigate = useNavigate();
   const article = articles?.find((a) => a.folder === folder);
@@ -23,13 +24,19 @@ const Articles = ({ folder }: ArticlesProps) => {
     return words.join(" ");
   };
 
+  const handleClick = (title: string) => {
+    if (isDisabled) return;
+    navigate(`/articles/${folder}/${title}`);
+  };
+
   return (
     <>
       {folder
         ? article?.files.map((f) => (
             <Card
+              icon={f.icon}
               text={parseTitle(f.title)}
-              onClick={() => navigate(`/articles/${folder}/${f.title}`)}
+              onClick={() => handleClick(f.title)}
             />
           ))
         : null}

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import BackButton from "../../assets/BackButton";
 import Articles from "../../components/Articles";
 import Card from "../../components/Card/Card";
 import { useSlider } from "../../hooks/useSlider";
 import "./subjects.css";
 
 type SubjectsProps = {
-  folders: Array<string>;
+  folders: Array<{ folder: string; icon: string }>;
 };
 
 const Subjects = ({ folders }: SubjectsProps) => {
@@ -18,17 +19,19 @@ const Subjects = ({ folders }: SubjectsProps) => {
     setArticlesElem(document.querySelector(".articles"));
   }, []);
 
-  const { viewFirstElement, viewSecondElement } = useSlider([
+  const { viewFirstElement, viewSecondElement, transitioning } = useSlider([
     foldersElem,
     articlesElem
   ]);
 
   const handleFolderChange = (folder: string) => {
+    if (transitioning) return;
     viewSecondElement();
     setSelectedFolder(folder);
   };
 
   const handleBackButton = () => {
+    if (transitioning) return;
     viewFirstElement();
   };
 
@@ -37,13 +40,19 @@ const Subjects = ({ folders }: SubjectsProps) => {
       <div className="folders">
         {folders
           ? folders.map((folder) => {
-              return <Card text={folder} onClick={handleFolderChange} />;
+              return (
+                <Card
+                  text={folder.folder}
+                  icon={folder.icon}
+                  onClick={handleFolderChange}
+                />
+              );
             })
           : null}
       </div>
       <div className="articles">
-        <Card text="Back" onClick={handleBackButton} />
-        <Articles folder={selectedFolder} />
+        <Card text="Back" onClick={handleBackButton} icon={<BackButton />} />
+        <Articles isDisabled={transitioning} folder={selectedFolder} />
       </div>
     </div>
   );

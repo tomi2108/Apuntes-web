@@ -1,11 +1,12 @@
 .card {
-  border: 6px solid rgba(255, 255, 255, 0.87);
+  border: 5px solid rgba(255, 255, 255, 0.87);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   justify-content: flex-end;
   height: 250px;
   width: 250px;
+  user-select: none;
 }
 
 .card-name {
@@ -15,9 +16,23 @@
   height: 25%;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+}
+
+.card-image>img {
+  width: 150px;
+  height: 150px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.card-image>svg {
+  width: 150px;
+  height: 150px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 .card-image {
-  height: 75%
+  height: 75%;
+  display: grid;
+  place-items: center;
 }

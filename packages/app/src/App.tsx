@@ -25,7 +25,13 @@ const App = () => {
         },
         {
           path: "/subjects",
-          element: <Subjects folders={articles?.map((a) => a.folder) ?? []} />
+          element: (
+            <Subjects
+              folders={
+                articles?.map((a) => ({ folder: a.folder, icon: a.icon })) ?? []
+              }
+            />
+          )
         },
         {
           path: "/articles/:folder/:title",

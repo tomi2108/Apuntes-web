@@ -1,9 +1,11 @@
 export type Folder = {
-  folder: string
-  files: Array<Article>
-}
+  folder: string;
+  files: Array<Article>;
+  icon: string;
+};
 
 export type Article = {
-  title:string
-  content:string
-}
+  icon: string;
+  title: string;
+  content: string;
+};
