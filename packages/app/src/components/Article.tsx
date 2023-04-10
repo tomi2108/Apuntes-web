@@ -1,7 +1,6 @@
 import "katex/dist/katex.min.css";
-import ReactMarkdown from "react-markdown";
-import rehypeKatex from "rehype-katex";
-import remarkMath from "remark-math";
+import MarkdownRenderer from "./MarkdownRenderer/MarkdownRenderer";
+import TableOfContents from "./TableOfContents/TableOfContents";
 
 type ArticleProps = {
   markdownContent: string;
@@ -9,13 +8,14 @@ type ArticleProps = {
 
 const Article = ({ markdownContent }: ArticleProps) => {
   return (
-    <div>
-      <ReactMarkdown
-        children={markdownContent}
-        remarkPlugins={[remarkMath]}
-        rehypePlugins={[rehypeKatex]}
-      />
-    </div>
+    <>
+      <div>
+        <TableOfContents markdownContent={markdownContent} />
+      </div>
+      <div>
+        <MarkdownRenderer markdownContent={markdownContent} />
+      </div>
+    </>
   );
 };
 

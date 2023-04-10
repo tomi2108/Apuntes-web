@@ -9,7 +9,7 @@ type CardProps = {
 
 const Card = ({ text, onClick, icon }: CardProps) => {
   return (
-    <div className="card" onClick={() => onClick(text)} key={text}>
+    <div className="card" onClick={() => onClick(text)}>
       <div className="card-image">
         {typeof icon === "string" ? (
           <img src={`data:image/svg+xml;utf8,${icon}`} />

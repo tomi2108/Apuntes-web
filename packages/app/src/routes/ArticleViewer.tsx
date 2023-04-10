@@ -14,7 +14,6 @@ const ArticleViewer = () => {
     const fileObj = folderObj?.files.find((file) => file.title === title);
     setContent(fileObj?.content as string);
   }, [articles, title, folder]);
-
   return <>{articles ? <Article markdownContent={content} /> : ""}</>;
 };
 

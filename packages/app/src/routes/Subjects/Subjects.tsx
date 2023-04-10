@@ -39,9 +39,10 @@ const Subjects = ({ folders }: SubjectsProps) => {
     <div className="container">
       <div className="folders">
         {folders
-          ? folders.map((folder) => {
+          ? folders.map((folder, index) => {
               return (
                 <Card
+                  key={index}
                   text={folder.folder}
                   icon={folder.icon}
                   onClick={handleFolderChange}
@@ -51,7 +52,12 @@ const Subjects = ({ folders }: SubjectsProps) => {
           : null}
       </div>
       <div className="articles">
-        <Card text="Back" onClick={handleBackButton} icon={<BackButton />} />
+        <Card
+          key={-1}
+          text="Materias"
+          onClick={handleBackButton}
+          icon={<BackButton />}
+        />
         <Articles isDisabled={transitioning} folder={selectedFolder} />
       </div>
     </div>

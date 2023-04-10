@@ -32,8 +32,9 @@ const Articles = ({ folder, isDisabled }: ArticlesProps) => {
   return (
     <>
       {folder
-        ? article?.files.map((f) => (
+        ? article?.files.map((f, index) => (
             <Card
+              key={index}
               icon={f.icon}
               text={parseTitle(f.title)}
               onClick={() => handleClick(f.title)}
