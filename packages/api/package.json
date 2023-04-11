@@ -7,7 +7,8 @@
     "start": "cross-env NODE_ENV=production node build/index.js",
     "test": "cross-env NODE_ENV=test jest --verbose",
     "dev": "cross-env NODE_ENV=development nodemon src/index.ts",
-    "build": "rm -r build && rm -r dist && rm tsconfig.tsbuildinfo && tsc --project ./tsconfig.json &&  cd ../app && npm run build && cp -r dist ../api && rm -r dist",
+    "rebuild": "rm -r build && rm -r dist && rm tsconfig.tsbuildinfo && npm run build",
+    "build": "tsc --project ./tsconfig.json &&  cd ../app && npm run build && cp -r dist ../api && rm -r dist",
     "build-api": "tsc --project ./tsconfig.json ",
     "eslint": "eslint ."
   },
