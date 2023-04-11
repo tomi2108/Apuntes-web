@@ -2,8 +2,6 @@
 
 ## Superficies parametrizadas
 
-\$\\alpha \$
-
 Sea
 $\bar{\sigma}: D_{uv} \subset \mathbb{R}^2 \rightarrow \mathbb{R}^3 / \bar{\sigma} (u,v) = \left (x(u,v),y(u,v),z(u,v) \right )$
 con $D_{uv}$ conexo y $\bar{\sigma}$ continua entonces:
@@ -156,7 +154,7 @@ Graficamos y hallamos el vector tangente.
 Un punto $P_0 = \bar{f} (t_0)$ es un punto regular de $C= Im(\bar{f})$
 si y solo si $\exists \bar{f}'(t_0) \;\;\wedge\;\; \bar{f}'(t_0) \neq 0$
 
-En el ejemplo, \$P_0 = (1,1) =\\bar{f} (1) \$ es un punto regular
+En el ejemplo, $P_0 = (1,1) =\bar{f} (1) $ es un punto regular
 
 ## Punto simple
 
@@ -182,9 +180,9 @@ $P_0= (x_0,y_0) \in D$
 
 Derivada parcial de $f$ en el punto $P_0$ se denota por: $f_x (P_0),$
 
-\$f_x\' (P_0), \$
+$f_x' (P_0)$
 
-\$\\frac{\\partial f}{\\partial x}(P_0), \$
+$\frac{\partial f}{\partial x}(P_0)$
 
 $D_1 f(P_0)$
 
@@ -207,16 +205,6 @@ $$
 
 
 
-
-
-
-
-
-
-
-
-
-
 ### Interpretación geometrica de las derivadas parciales
 
 ![Derivadas7.JPG](839a4d52-Derivadas7.JPG)
@@ -224,7 +212,7 @@ $$
 ## Derivada direccional de un campo escalar
 
 Sea $f : D \subset \mathbb{R} ^n \rightarrow \mathbb{R} / z= f(x,y)$ ,
-\$P_0 \\in D \$ y \$ \\bar{v} \\in \\mathbb{R}\^n\$
+$P_0 \in D $ y $ \bar{v} \in \mathbb{R}\^n$
 
 Si el limite existe la derivada en dirección de $\bar{v}$ se define:
 
@@ -272,8 +260,8 @@ $$
 
 ## Derivada direccional de un campo vectorial
 
-Sea \$\\bar{f} : D \\subset \\mathbb{R}\^n \\rightarrow \\mathbb{R}\^m
-\$, \$P_0\\in D \$, $\breve{v} \in \mathbb{R}^m$ $/ ||\breve{v}|| = 1$
+Sea $\bar{f} : D \subset \mathbb{R}\^n \rightarrow \mathbb{R}\^m
+$, $P_0\in D $, $\breve{v} \in \mathbb{R}^m$ $/ ||\breve{v}|| = 1$
 
 
 $$

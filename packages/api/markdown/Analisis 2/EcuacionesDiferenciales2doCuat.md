@@ -3,8 +3,8 @@
 
 ## Definición de campo escalar homogéneo
 
-Un campo escalar \$f : D \\subset \\mathbb{R}\^n \\rightarrow
-\\mathbb{R} \$ es homogéneo de grado $k$ si:
+Un campo escalar $f : D \subset \mathbb{R}\^n \rightarrow
+\mathbb{R}$ es homogéneo de grado $k$ si:
 
 $$
 \forall \bar{x} \in D \,\,,\,\, \forall t\in \mathbb{R}-\{0\} : f(t\bar{x}) = t^kf(\bar{x})
@@ -59,8 +59,6 @@ $$
 
 Concluimos que $f$ no es homogéneo.
 
-## \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- {#-------------------}
-
 Una ecuación difrencial de primer orden $P(x,y)dx + Q(x,y)dy = 0$ es
 homogénea si las funciones $P$ y $Q$ son homogéneas del mismo grado.
 
@@ -72,8 +70,6 @@ homogénea de grado 3 y $Q(x,y)=y^3$ también lo es:
 
 $$
 \begin{matrix}
-
-
 P(x,y)=xy^2\\
 P(tx,ty)=tx(ty)^2=txt^2y^2=t^3xy^2=t^3P(x,y)\\
 Q(x,y)=y^3\\
@@ -84,8 +80,8 @@ $$
 
 
 
-De $P(x,y)dx + Q(x,y)dy = 0$ se puede deducir: \$ Q(x,y)dy = -P(x,y)dx
-\$ y despues:
+De $P(x,y)dx + Q(x,y)dy = 0$ se puede deducir: $ Q(x,y)dy = -P(x,y)dx
+$ y despues:
 
 
 $$
@@ -136,8 +132,6 @@ homogénea de grado $0$.
 
 $$
 \begin{matrix}
-
-
 u'x=f(1,u)-u\\
 \frac{du}{dx}=f(1,u)-u \\
 \frac{du}{f(1,u)-u}=\frac{dx}{x}\\
@@ -175,7 +169,7 @@ $\phi : D \subset \mathbb{R}^2 \rightarrow \mathbb{R} \,\,/\,\, \nabla\phi = \ba
 precisamente los conjuntos de nivel de la función potencial $\phi$ serán
 la s.g de la E.D.
 
-### Ej: {#ej}
+### Ej
 
 
 $$
@@ -277,10 +271,6 @@ $$
 \frac{1}{2}x^2y^2+y = 0
 $$
 
-
-
-
-#### \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- {#--------------------------}
 
 Veamos un ejemplo de una E.D que no es del tipo T.E pero puede reducirse
 a una T.E.
