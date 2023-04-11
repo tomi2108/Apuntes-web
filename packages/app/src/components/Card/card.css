@@ -7,7 +7,16 @@
   height: 250px;
   width: 250px;
   user-select: none;
+  cursor: pointer;
 }
+
+.card:hover {
+  scale: 1.05;
+  rotate: 0.5deg;
+  transition: scale, rotate 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 .card-name {
   text-align: center;
