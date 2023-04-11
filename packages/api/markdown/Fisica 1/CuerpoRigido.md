@@ -7,7 +7,9 @@
 
 Velocidad de un punto.
 
-\$\\bar{v}\_a =\\bar{\\omega}\\times \\bar{r} \$
+$$
+\bar{v}_a =\bar{\omega}\times \bar{r}
+$$
 
 Donde $\bar{\omega}$ es un vector colineal con el eje de rotación y el
 modulo está dado por el valor absoluto de $\omega$ y cuyo sentido esta
@@ -17,7 +19,9 @@ dado por la regla del tirabuzón.
 
 Velocidad de un punto:
 
-\$\\bar{v}*a =\\bar{\\omega}\\times \\bar{r}+\\bar{v}*{eje} \$
+$$
+\bar{v}_a =\bar{\omega}\times \bar{r}+\bar{v}_{eje}
+$$
 
 Notar que $\bar{v}_{eje} = v_{traslación}$
 
@@ -128,7 +132,7 @@ $$
 $$
 
 
-Recordemos que \$\\bar{p}*{cm} = M\\cdot \\bar{v}*{cm} \$
+Recordemos que $\bar{p}_{cm} = M\cdot \bar{v}_{cm}$
 
 y además $\bar{J}_F = \bar {F} \cdot \Delta t$
 

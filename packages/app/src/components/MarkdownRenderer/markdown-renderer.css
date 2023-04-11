@@ -1,0 +1,8 @@
+.markdown-renderer {
+  background-color: #23272F;
+  padding-inline: 3vw;
+  margin-top: 60px;
+  grid-column: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

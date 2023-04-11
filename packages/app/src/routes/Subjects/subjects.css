@@ -9,6 +9,7 @@
 }
 
 .folders {
+  margin-top: calc(60px + 1vh);
   padding: 30px;
   align-self: flex-start;
   align-items: flex-start;
@@ -23,6 +24,7 @@
 }
 
 .articles {
+  margin-top: calc(60px + 1vh);
   padding: 30px;
   align-self: flex-start;
   align-items: flex-start;

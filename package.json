@@ -4,13 +4,16 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "cd packages && cd api && npm run dev"
+    "dev": "cd packages && cd api && npm run dev",
+    "start": "cd packages && cd api && npm start",
+    "build": "cd packages && cd api && npm run build"
   },
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
     "remark-parse": "^10.0.1",
+    "remark-toc": "^8.0.1",
     "typescript": "^5.0.4"
   },
   "devDependencies": {

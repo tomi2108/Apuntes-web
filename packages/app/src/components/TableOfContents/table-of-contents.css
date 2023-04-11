@@ -1,0 +1,41 @@
+.table-of-contents ul {
+  background-color: #23272F;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 16.6vw;
+  top: 60px;
+  bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.table-of-contents li {
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.table-of-contents a:hover {
+  background-color: #343A46;
+}
+
+.table-of-contents a {
+  height: 3rem;
+  border-radius: 0 7px 7px 0;
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  padding-inline: 1vw;
+  width: 100%;
+}
+
+.table-of-contents .toc-subtitle {
+  padding-left: calc(1vw + 20px)
+}

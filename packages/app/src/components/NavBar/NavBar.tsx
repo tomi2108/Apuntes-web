@@ -4,10 +4,10 @@ import "./nav-bar.css";
 const NavBar = () => {
   return (
     <ul className="nav-bar">
-      <li>
+      <li className="nav-item">
         <Link to="/">Home</Link>
       </li>
-      <li>
+      <li className="nav-item">
         <Link to="/subjects">Materias</Link>
       </li>
     </ul>

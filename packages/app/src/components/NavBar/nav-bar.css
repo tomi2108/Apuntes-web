@@ -1,3 +1,28 @@
 .nav-bar {
-  height: 60px
+  background-color: #23272F;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.nav-item a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 8rem;
+  height: 3rem;
+  color: inherit;
+}
+
+.nav-item a:hover {
+  background-color: #343A46;
 }

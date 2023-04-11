@@ -7,7 +7,7 @@
 Recordamos la definición:
 
 $$
-\int_{C}fds=\int_{a}^{b}f\,[\bar{\sigma}\,(t)]\cdot||{\bar{\sigma}\,}'(t)||dt
+\int_{C}fds=\int_{a}^{b}f\hspace{5pt}[\bar{\sigma}\hspace{5pt}(t)]\cdot||{\bar{\sigma}\hspace{5pt}}'(t)||dt
 $$
 
 
@@ -48,14 +48,14 @@ $$
 
 
 Es decir, la función de densidad $\delta (x,y)$ está funcionando como
-nuestro campo escalar y la ecuacion $\bar{\sigma}\,(t)$ del cable como
+nuestro campo escalar y la ecuacion $\bar{\sigma}\hspace{5pt}(t)$ del cable como
 la curva.
 
 ##### Ejemplo:
 
 Calcular la masa de un alambre cuya forma es de la curva intersección de
 las superficies $z=2-x^2-2y^2\hspace{2pt},\hspace{2pt} z=x^2$ entre
-$(0,1,0)$ y \$(1,0,1) \$ en el primer octante si su densidad es
+$(0,1,0)$ y $(1,0,1)$ en el primer octante si su densidad es
 $\delta (x,y,z) = kxy\hspace{5pt},\hspace{5pt} k>0$
 
 La curva está dada como intersección de dos superficies:
@@ -78,16 +78,18 @@ por estar limitado el ejercicio al primer octante
 Reemplazamos $z=0$ e igualamos las ecuaciones para hayar la proyección
 de la curva en el plano $xy$
 
-$x^2 = 2-x^2-2y^2 \\ 2x^2 + 2y^2 = 2 \\ x^2 + y^2 = 1$
+$$
+x^2 = 2-x^2-2y^2 \\ 2x^2 + 2y^2 = 2 \\ x^2 + y^2 = 1
+$$
 
 Definimos una parametrización de la curva
 
-Para $x$ e $y$ podemos usar \$\\cos (t) \$ y \$\\sin (t) \$ y como
+Para $x$ e $y$ podemos usar $\cos (t) $ y $\sin (t) $ y como
 tenemos que $z=x^2$ entonces $z=\cos^2 (t)$
 
 
 $$
-\bar{\sigma}\left(t\right) = \left(\cos t\,,\,\sin t\,,\,\cos^2 (t)\,\right)
+\bar{\sigma}\left(t\right) = \left(\cos t\hspace{5pt},\hspace{5pt}\sin t\hspace{5pt},\hspace{5pt}\cos^2 (t)\hspace{5pt}\right)
 $$
 
 
@@ -96,32 +98,32 @@ $$
 Debemos definir los limites de $t$ , para esto usamos las condiciones
 iniciales de los puntos donde se debe integrar.
 
-$\left\{\begin{matrix} \cos (t_0)=1\\ \sin (t_0)=0\\ \cos^2 (t_0)=1 \end{matrix}\right. \Rightarrow t_0=0$
+$$
+\left\{\begin{matrix} \cos (t_0)=1\\ \sin (t_0)=0\\ \cos^2 (t_0)=1 \end{matrix}\right. \Rightarrow t_0=0
+$$
 
-\$\\left{\\begin{matrix} \\cos (t_1)=0\\ \\sin (t_1)=1\\ \\cos\^2
-(t_1)=0 \\end{matrix}\\right. \\Rightarrow t_1=\\frac{\\pi}{2} \$
-
+$$
+\left\{\begin{matrix} \cos (t_1)=0\\ \sin (t_1)=1\\ \cos\^2
+(t_1)=0 \end{matrix}\right. \Rightarrow t_1=\frac{\pi}{2}
+$$
 
 $$
  0\leq t \leq \frac{\pi}{2}
  $$
 
-
-
-
 Entonces una parametrización suave del arco de curva $C$ es:
 
 
 $$
-\bar{\sigma}:\left[0,\frac{\pi}{2}\right]\rightarrow\mathbb{R}^3\hspace{5pt}/\hspace{5pt}\bar{\sigma}\left(t\right) = \left(\cos t\,,\,\sin t\,,\,\cos^2 (t)\,\right)
+\bar{\sigma}:\left[0,\frac{\pi}{2}\right]\rightarrow\mathbb{R}^3\hspace{5pt}/\hspace{5pt}\bar{\sigma}\left(t\right) = \left(\cos t\hspace{5pt},\hspace{5pt}\sin t\hspace{5pt},\hspace{5pt}\cos^2 (t)\hspace{5pt}\right)
 $$
-
-
-
 
 Hallamos la derivada pues nos servirá para calcular la masa.
 
-${\bar{\sigma}\;}' (t) = \left(-\sin(t)\,,\,\cos(t)\,,\,-\sin(2t)\,\right)\\ \left \| {\bar{\sigma}}\,'(t) \right \| = \sqrt{1+\sin^{2}(2t)}$
+$$
+\bar{\sigma}'(t) = \left(-\sin(t)\hspace{5pt},\hspace{5pt}\cos(t)\hspace{5pt},\hspace{5pt}-\sin(2t)\hspace{5pt}\right)\\
+\left\| \bar{\sigma}'(t) \right\| = \sqrt{1+\sin^{2}(2t)}
+$$
 
 Ahora calculamos la masa usando la integral de linea:
 
@@ -207,7 +209,7 @@ largo de una curva $C=Im(\bar{\sigma})$ con la integral.
 Recordamos la definición:
 
 $$
-W = \int_{C}\bar{F}\cdot\bar{ds}=\int_{a}^{b}\bar{F}\,[\bar{\sigma}\,(t)]\cdot||{\bar{\sigma}\,}'(t)||dt
+W = \int_{C}\bar{F}\cdot\bar{ds}=\int_{a}^{b}\bar{F}\hspace{5pt}[\bar{\sigma}\hspace{5pt}(t)]\cdot||{\bar{\sigma}\hspace{5pt}}'(t)||dt
 $$
 
 
@@ -225,7 +227,7 @@ tal que: $\bar{F}=\bigtriangledown\phi$
 Se cumplen las siguientes dos condiciones:
 
 $$
-\oint_{C}\bar{F}\cdot\bar{ds} = 0  \hspace{15pt} \forall \, C\hspace{5pt} \text{cerrada}
+\oint_{C}\bar{F}\cdot\bar{ds} = 0  \hspace{15pt} \forall \hspace{5pt} C\hspace{5pt} \text{cerrada}
 $$
 
 
@@ -233,7 +235,7 @@ $$
 
 
 $$
-\int_{C_1}\bar{F}\cdot\bar{ds} = \int_{C_2}\bar{F}\cdot\bar{ds}\hspace{15pt} \forall \, C_1 , C_2 \hspace{5pt} \text{con extremos inicial y final iguales}
+\int_{C_1}\bar{F}\cdot\bar{ds} = \int_{C_2}\bar{F}\cdot\bar{ds}\hspace{15pt} \forall \hspace{5pt} C_1 , C_2 \hspace{5pt} \text{con extremos inicial y final iguales}
 $$
 
 
@@ -312,7 +314,7 @@ $$
 
 Dado un macizo $H$
 $$
-Vol(H)= \iiint_{H}dx\, dy\, dz
+Vol(H)= \iiint_{H}dx\hspace{5pt} dy\hspace{5pt} dz
 $$
 
 
@@ -323,7 +325,7 @@ $H$ se calcula:
 
 
 $$
-Masa(H)= \iiint_{H}\delta(x,y,z)dx\, dy\, dz
+Masa(H)= \iiint_{H}\delta(x,y,z)dx\hspace{5pt} dy\hspace{5pt} dz
 $$
 
 

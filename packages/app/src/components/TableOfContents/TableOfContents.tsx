@@ -7,11 +7,14 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 import generateId from "uuid-by-string";
+import "./table-of-contents.css";
 
 const TableOfContents = ({ markdownContent }: { markdownContent: string }) => {
-  const [toc, setToc] = useState<Array<{ id: string; title: string }> | null>(
-    null
-  );
+  const [toc, setToc] = useState<Array<{
+    id: string;
+    title: string;
+    className: string;
+  }> | null>(null);
 
   useEffect(() => {
     if (!markdownContent) return;
@@ -30,17 +33,20 @@ const TableOfContents = ({ markdownContent }: { markdownContent: string }) => {
       //@ts-ignore
       const title = toString(toHast(item));
       const id = generateId(title);
-      return { title, id };
+      const className = item.depth === 2 ? "toc-subtitle" : "toc-title";
+      return { title, id, className };
     });
     setToc(tocItems);
   }, [markdownContent]);
   return (
-    <nav>
+    <nav className="table-of-contents">
       <ul>
         {toc
           ? toc.map((item) => (
               <li key={item.id}>
-                <a href={`#${item.id}`}>{item.title}</a>
+                <a className={item.className} href={`#${item.id}`}>
+                  {item.title}
+                </a>
               </li>
             ))
           : null}

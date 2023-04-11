@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../App";
-import Article from "../components/Article";
+import Article from "../components/Article/Article";
 
 const ArticleViewer = () => {
   const [content, setContent] = useState<string>("");

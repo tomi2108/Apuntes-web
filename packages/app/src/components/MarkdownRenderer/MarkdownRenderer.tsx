@@ -1,14 +1,12 @@
-import { toHtml } from "hast-util-to-html";
-import { toHast } from "mdast-util-to-hast";
 import { useEffect, useState } from "react";
 import rehypeKatex from "rehype-katex";
-import rehypeStringify from "rehype-stringify";
-import remarkGfm from "remark-gfm";
+import rehypeStringify from "rehype-stringify/lib";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 import generateId from "uuid-by-string";
+import "./markdown-renderer.css";
 
 const MarkdownRenderer = ({ markdownContent }: { markdownContent: string }) => {
   const [items, setItems] = useState<string | null>(null);
@@ -17,23 +15,24 @@ const MarkdownRenderer = ({ markdownContent }: { markdownContent: string }) => {
     if (!markdownContent) return;
     const processor = unified()
       .use(remarkParse)
-      .use(remarkGfm)
-      .use(remarkMath)
+      .use(remarkMath, { singleDollarTextMath: true })
+      .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeKatex)
-      .use(remarkRehype)
       .use(rehypeStringify);
-
     const tree = processor.parse(markdownContent);
-    const hastTree = toHast(tree);
+    const hastTree = processor.runSync(tree);
     const a = {
       ...hastTree,
       //@ts-ignore
       children: hastTree?.children.map((e) => {
+        //@ts-ignore
         return e.tagName === "h1" || e.tagName === "h2"
           ? {
               ...e,
               properties: {
+                //@ts-ignore
                 ...e.properties,
+                //@ts-ignore
                 id: generateId(e.children[0].value)
               }
             }
@@ -41,13 +40,16 @@ const MarkdownRenderer = ({ markdownContent }: { markdownContent: string }) => {
       })
     };
     //@ts-ignore
-    const html = toHtml(a);
-
-    setItems(html);
+    setItems(processor.stringify(a));
   }, [markdownContent]);
   return (
     <>
-      {items ? <div dangerouslySetInnerHTML={{ __html: items }}></div> : null}
+      {items ? (
+        <article
+          className="markdown-renderer"
+          dangerouslySetInnerHTML={{ __html: items }}
+        ></article>
+      ) : null}
     </>
   );
 };

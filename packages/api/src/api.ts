@@ -26,7 +26,7 @@ api.use("/api/articles", articlesRouter);
 api.get("/health", (req, res) => res.send("OK"));
 
 api.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/build/index.html"), (err) => {
+  res.sendFile(path.join(__dirname, "../dist/index.html"), (err) => {
     if (err) {
       res.status(500).send(err);
     }
