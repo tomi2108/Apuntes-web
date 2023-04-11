@@ -33,12 +33,12 @@ const getContent = (folder: string, fileName: string) => {
 };
 
 const getFolderIcon = (folder: string) => {
-  return fs.readFileSync(`${iconsPath}/${folder}/folder.svg`).toString();
+  return fs.readFileSync(`${iconsPath}/${folder}/folder.md`).toString();
 };
 
 const getFileIcon = (folder: string, file: string) => {
   return fs
-    .readFileSync(`${iconsPath}/${folder}/${file.slice(0, -3)}.svg`)
+    .readFileSync(`${iconsPath}/${folder}/${file.slice(0, -3)}.md`)
     .toString();
 };
 

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import BackButton from "../../assets/BackButton";
 import Articles from "../../components/Articles";
 import Card from "../../components/Card/Card";
 import { useSlider } from "../../hooks/useSlider";
@@ -56,7 +55,7 @@ const Subjects = ({ folders }: SubjectsProps) => {
           key={-1}
           text="Materias"
           onClick={handleBackButton}
-          icon={<BackButton />}
+          icon={"$$\n\\leftarrow\n$$"}
         />
         <Articles isDisabled={transitioning} folder={selectedFolder} />
       </div>
