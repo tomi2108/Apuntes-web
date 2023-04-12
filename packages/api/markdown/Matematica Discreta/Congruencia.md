@@ -72,17 +72,17 @@ $$
 $$
 
 
-1.  Si $n$ es un numero natural cualquiera y $p$ es un numero primo:
-    $$
+2.  Si $n$ es un numero natural cualquiera y $p$ es un numero primo:
+$$
+\varphi(p^n)= p^{n-1}(p-1)
+$$
 
-    \varphi(p^n)= p^{n-1}(p-1)$$
 
 
-
-1.  Si $n,m \in \mathbb{N}$ y $m.c.d(n,m) = 1$ entonces:
-    $$
-
-    \varphi(n\cdot m) = \varphi(n)  \cdot \varphi(m)$$
+3.  Si $n,m \in \mathbb{N}$ y $m.c.d(n,m) = 1$ entonces:
+$$
+\varphi(n\cdot m) = \varphi(n)  \cdot \varphi(m)
+$$
 
 
 
@@ -114,7 +114,7 @@ numero entero por un numero primo.
 
 Calculemos el resto de la división de $7^{122}$ por $11$.
 
-Como \$122 = 10 \\cdot 12 + 2 \$, se tiene que:
+Como $122 = 10 \cdot 12 + 2 $, se tiene que:
 
 $7^{122} = 7^{10 \cdot 12 +2} = 7^{10\cdot 12} \cdot 7^2 = 7^{(11-1) \cdot 12} \cdot 7^2 = [7^{(11-1)}]^{12} \cdot 7^2$
 
@@ -127,7 +127,7 @@ Entonces: $7^{122} \equiv 7^2(11) = 5$
 
 Si $m.c.d(a,n) = 1 \Rightarrow a^{\varphi(n)} \equiv 1(n)$
 
-### Ej: {#ej}
+### Ej
 
 Calculemos el resto de dividir $8^{1791485}$ por $21$.
 
@@ -138,15 +138,21 @@ Como: $8^{\varphi(21)}\equiv 1(21)$ entonces: $8^{12}\equiv 1(21)$
 
 Para poder usar este resultado, descomponemos el numero $1791485$
 
-\$1791485 = 12\\cdot 149290 + 5 \\Rightarrow 8\^{1791485} = 8\^{12\\cdot
-149290 + 5} = (8\^{12})\^{149290} \\cdot 8\^5 \$
+$$
+1791485 = 12\cdot 149290 + 5 \Rightarrow 8^{1791485} = 8^{12\cdot
+149290 + 5} = (8^{12})^{149290} \cdot 8^5
+$$
 
-Como $8^{12}\equiv 1(21)$ entonces \$8\^{1791485}\\equiv 1 \\cdot 8\^5
-(21) \$
+Como $8^{12}\equiv 1(21)$ entonces $8^{1791485}\equiv 1 \cdot 8^5
+(21) $
 
 Y ya tenemos un número bastante mas chico, aunque lo podemos escribir
-por ejemplo: $8^5 = 8^2 \cdot 8^2 \cdot 8$ y como
-$8^2 = 64 \equiv 1(21)\Rightarrow 8^5 \equiv 8 (21)$
+por ejemplo:
+$$8^5 = 8^2 \cdot 8^2 \cdot 8$ y como
+$$
+$$
+8^2 = 64 \equiv 1(21)\Rightarrow 8^5 \equiv 8 (21)
+$$
 
 Y por lo tanto $8^{1791485} \equiv 8 (21)$ con lo cual el resto de
 dividir $8^{1791485}$ por $21$ es $8$
@@ -156,7 +162,7 @@ dividir $8^{1791485}$ por $21$ es $8$
 Son de la forma $a\cdot x \equiv b(n)$ siendo $a,x,b$ enteros y $n$
 natural.
 
-Si \$x \\in \\mathbb{Z} \$ es una solución de $a\cdot x \equiv b(n)$
+Si $x \in \mathbb{Z} $ es una solución de $a\cdot x \equiv b(n)$
 entonces $x+kn$ también es una solución. Como son infinitas soluciones
 consideramos, $0 \leq x < n$ y las llamaremos soluciones principales.
 

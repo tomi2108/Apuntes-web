@@ -32,8 +32,8 @@ no a $v_3$
 ejemplo: $v_5$ es aislado.
 
 **ARISTAS PARALELAS**: $a_i$ es paralela a
-$a_j \Leftrightarrow \varphi(a_i) = \varphi(a_j )$ siendo \$a_i \\neq
-a_j \$ Es decir son aquellas comprendidas entre los mismos vértices. En
+$a_j \Leftrightarrow \varphi(a_i) = \varphi(a_j )$ siendo $a_i \\neq
+a_j $ Es decir son aquellas comprendidas entre los mismos vértices. En
 el ejemplo, a1 y a5 son paralelas, están comprendidas entre los mismos
 vértices.
 
@@ -58,14 +58,14 @@ Se define la matriz de adyacencia de $G$ a una matriz booleana de
 $n\times n$:
 
 $$
-M_a(G) = (( m_{ij} ))   \text{tal que}\;\; m_{ij} =  \left\{\begin{matrix}
-1 \;\text{si}\;\;v_i \;\;\text{es adyacente a}\;\; v_j\\
-0 \;\text{si}\;\;v_i \;\;\text{no es adyacente a}\;\; v_j
+M_a(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{\begin{matrix}
+1 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{es adyacente a}\hspace{5pt}\hspace{5pt} v_j\\
+0 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{no es adyacente a}\hspace{5pt}\hspace{5pt} v_j
 \end{matrix}\right.
 $$
 
 
-### Ej: {#ej}
+### Ej:
 
 ![Grafos2.JPG](8b25dfc3-Grafos2.JPG)
 
@@ -78,9 +78,9 @@ Se define la matriz de incidencia de $G$ a una matriz booleana de
 $n\times m$:
 
 $$
-M_i(G) = (( m_{ij} ))   \text{tal que}\;\; m_{ij} =  \left\{\begin{matrix}
-1 \;\text{si}\;\;v_i \;\;\text{es incidente a}\;\; a_j\\
-0 \;\text{si}\;\;v_i \;\;\text{no es incidente a}\;\; a_j
+M_i(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{\begin{matrix}
+1 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{es incidente a}\hspace{5pt}\hspace{5pt} a_j\\
+0 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{no es incidente a}\hspace{5pt}\hspace{5pt} a_j
 \end{matrix}\right.
 $$
 
@@ -141,28 +141,21 @@ vértice es adyacente a todos los demás.
 
 ![Grafos4.JPG](a8b470f3-Grafos4.JPG)
 
-\$\$\$\$
-
-\$\$\$\$
-
-\$\$\$\$
-
-\$\$\$\$
-
-\$\$\$\$
 
 ### Grafos bipartitos
 
-Sea un grafo simple \$G = (V; A;\\varphi ) \$con
-$V =\{v_1, v_2, ... , v_n\}$ y $A =\{a_1, a_2, ... , a_m\}$
+Sea un grafo simple $G = (V; A;\varphi )$ con
+$$
+V =\{v_1, v_2, ... , v_n\}$ y $A =\{a_1, a_2, ... , a_m\}
+$$
 
 Se dice que $G$ es BIPARTITO $\Leftrightarrow V = V_1 \cup V_2$ con
-\$V_1 \\neq \\emptyset;;\\wedge;; V_2\\neq \\emptyset;;\\wedge;;
-V_1\\cap V_2 = \\emptyset \$
+$V_1 \neq \emptyset \wedge  V_2\neq \emptyset \wedge
+V_1\cap V_2 = \emptyset $
 
-$\wedge \;\; \forall a_i\in A : \varphi(a_i) = \{v_j , v_k\}$ con
-$v_j \in V_1 \;\;\wedge\;\;v_k \in V_2$ o \$ v_k\\in V_1 ;;\\wedge;; v_j
-\\in V_2\$
+$\wedge \hspace{5pt}\hspace{5pt} \forall a_i\in A : \varphi(a_i) = \{v_j , v_k\}$ con
+$v_j \in V_1 \hspace{5pt}\hspace{5pt}\wedge\hspace{5pt}\hspace{5pt}v_k \in V_2$ o $ v_k\in V_1  \wedge  v_j
+\in V_2$
 
 Es decir, los grafos BIPARTITOS son grafos cuyo conjunto de vértices
 está particionado en dos subconjuntos no vacíos y disjuntos: $V_1$ y
@@ -186,17 +179,17 @@ aristas posibles.
 
 ![Grafos6.JPG](1abdd2c5-Grafos6.JPG)
 
-\$\$\$\$
 
-\$\$\$\$
+
+
 
 ## Subgrafos
 
 Dado un grafo $G = (V; A; \varphi )$ , se denomina subgrafo al grafo
-\$G' = (V'; A' ; \\varphi/\_{A'}) \$tal que
+$G' = (V'; A' ; \varphi/\_{A'}) $tal que
 
-\$V'\\subseteq V ;;\\wedge;; A'\\subseteq A ;;\\wedge;; \\varphi/\_{A'}
-\$es la función restringida a $A'$
+$V'\subseteq V  \wedge  A'\subseteq A  \wedge  \varphi/\_{A'}
+$es la función restringida a $A'$
 
 Para obtener subgrafos de un grafo dado se puede:
 
@@ -213,7 +206,7 @@ Dado un grafo $G = (V; A;\varphi )$ , en el conjunto de vértices se
 define la siguiente relación:
 
 $$
-v_i R v_j \Leftrightarrow \exists \text{camino de}\;\; v_i \;\;\text{a}\;\; v_j \;\;\vee\;\; v_i = v_j
+v_i R v_j \Leftrightarrow \exists \text{camino de}\hspace{5pt}\hspace{5pt} v_i \hspace{5pt}\hspace{5pt}\text{a}\hspace{5pt}\hspace{5pt} v_j \hspace{5pt}\hspace{5pt}\vee\hspace{5pt}\hspace{5pt} v_i = v_j
 $$
 
 
@@ -230,7 +223,7 @@ par de vértices.
 ## Definiciones {#definiciones}
 
 **ISTMO O PUNTO DE CORTE** Dado un grafo $G = (V; A;\varphi )$ conexo,
-$v\in V$ es istmo \$\\Leftrightarrow \\tilde{G}\_v \$ es no conexo.
+$v\in V$ es istmo $\Leftrightarrow \tilde{G}\_v $ es no conexo.
 
 Es decir, un istmo es un vértice tal que su supresión desconecta al
 grafo.
@@ -250,7 +243,7 @@ Es decir, un conjunto de aristas es desconectante si y sólo si su
 supresión desconecta al grafo.
 
 **CONJUNTO DE CORTE**: Un conjunto $B$ desconectante es también de
-corte\$\\Leftrightarrow \\forall C \\subset B, C \$ no es desconectante.
+corte$\Leftrightarrow \forall C \subset B, C $ no es desconectante.
 
 O sea, para ser conjunto de corte debe estar formado por el mínimo
 número de aristas, o bien solamente por las necesarias para desconectar
@@ -289,8 +282,8 @@ pues en muchos casos repetiría vértices y no sería hamiltoniano.
 
 ## Isomorfismos de grafos
 
-Dados dos grafos: $G1 = (V_1; A_1; \varphi_1)$ y \$ G_2 = (V_2 ; A_2 ;
-\\varphi_2)\$
+Dados dos grafos: $G1 = (V_1; A_1; \varphi_1)$ y $ G_2 = (V_2 ; A_2 ;
+\varphi_2)$
 
 Se dice que son isomorfos si y solo si existen dos funciones biyectivas:
 
@@ -302,8 +295,8 @@ $$
 $$
 
 
-Si no hay aristas paralelas, entonces es suficiente: \$ \\forall u,v
-\\in V_1 : {u, v}\\in A_1 \\Rightarrow{ f(u), f(v) } \\in A_2\$
+Si no hay aristas paralelas, entonces es suficiente: $ \forall u,v
+\in V_1 : {u, v}\in A_1 \Rightarrow{ f(u), f(v) } \in A_2$
 
 Esto significa que si en el primer grafo hay una arista entro dos
 vértices, los correspondientes a estos vertices en el segundo grafo
@@ -377,7 +370,7 @@ $g(v)$
 **GRADO NETO**: es la diferencia entre el grado positivo y el negativo.
 Se denota $g_N(v)$
 
-### Ej: {#ej}
+### Ej:
 
 ![Grafos7.JPG](0e712a08-Grafos7.JPG)
 
@@ -403,7 +396,7 @@ extremo inicial de ninguna arista.
 **FUENTE**: es un vértice $v$ tal que $g^+(v) = 0$ O sea, $v$ no es
 extremo final de ninguna arista
 
-## Matriz de adyacencia {#matriz-de-adyacencia}
+## Matriz de adyacencia
 
 Sea un grafo $G = ( V ; A ;\delta )$ con $V = \{ v_1, v_2, ... , v_n \}$
 y $A = \{ a_1, a_2, ... , a_m \}$
@@ -413,18 +406,18 @@ $n\times n$:
 
 
 $$
-M_a(G) = (( m_{ij} ))   \text{tal que}\;\; m_{ij} =  \left\{\begin{matrix}
-1 \;\text{si}\;\;\exists a \in A: \delta(a) = (v_i ; v_j)\\
-0 \;\text{en caso contrario}
+M_a(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{\begin{matrix}
+1 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}\exists a \in A: \delta(a) = (v_i ; v_j)\\
+0 \hspace{5pt}\text{en caso contrario}
 \end{matrix}\right.
 $$
 
 
-### Ej: {#ej}
+### Ej:
 
 ![Grafos8.JPG](0993a47b-Grafos8.JPG)
 
-## Matriz de incidencia {#matriz-de-incidencia}
+## Matriz de incidencia
 
 Sea un grafo $G = ( V ; A ;\delta )$ con $V = \{ v_1, v_2, ... , v_n \}$
 y $A = \{ a_1, a_2, ... , a_m \}$
@@ -434,10 +427,10 @@ incidencia de $G$ a una matriz de $n\times m$:
 
 
 $$
-M_i(G) = (( m_{ij} ))   \text{tal que}\;\; m_{ij} =  \left\{\begin{matrix}
-1 \;\text{si}\;\;v_i \;\;\text{es vértice inicial de}\;\; a_j\\
--1 \;\text{si}\;\;v_i \;\;\text{es vértice final de}\;\; a_j\\
-0 \;\text{si}\;\;v_i \;\;\text{no es extremo de}\;\; a_j
+M_i(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{\begin{matrix}
+1 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{es vértice inicial de}\hspace{5pt}\hspace{5pt} a_j\\
+-1 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{es vértice final de}\hspace{5pt}\hspace{5pt} a_j\\
+0 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{no es extremo de}\hspace{5pt}\hspace{5pt} a_j
 \end{matrix}\right.
 $$
 
@@ -450,7 +443,8 @@ Ejemplo para el mismo dígrafo anterior.
 
 Dado un dígrafo, si se cambian las aristas dirigidas por aristas no
 dirigidas, se obtiene el grafo asociado. Es decir hay que ignorar el
-sentido de las aristas.\
+sentido de las aristas.
+
 Si en el dígrafo original hay aristas paralelas o antiparalelas, en el
 grafo asociado sólo se representa una de ellas.
 
@@ -473,11 +467,6 @@ un dígrafo:
 $$
 \forall v \in  V : g^+(v) = g^-(v)
 $$
-
-
-\$\$\$\$
-
-\$\$\$\$
 
 ## Isomorfismo de dígrafos
 
@@ -505,7 +494,7 @@ ser árbol.
 
 Todas las aristas de un árbol son puentes.
 
-En todo árbol se cumple que:\$ \|V\| = \|A\| + 1\$
+En todo árbol se cumple que: $|V| = |A| + 1$
 
 Se denomina **BOSQUE** al grafo no conexo en el cual cada una de las
 componentes es un árbol.
@@ -550,7 +539,7 @@ Podríamos decir que se reconocen como en el árbol genealógico.
 
 El **NIVEL DE UN VÉRTICE** se define en forma recursiva:
 
-1.  El nivel de la raíz es cero: \$n(r) = 0 \$
+1.  El nivel de la raíz es cero: $n(r) = 0 $
 2.  Cada vértice tiene un nivel mas que su padre.
 
 **ALTURA** de un árbol: es el mayor **NIVEL** alcanzado por las
@@ -588,8 +577,6 @@ $v$, todos sus descendientes y las aristas entre ellos.
 ## Recorrido de un árbol
 
 ![Grafos12.JPG](41e4580a-Grafos12.JPG)
-
-\$\$\$\$
 
 ![imagen.png](abcd4ebb-imagen.png)
 

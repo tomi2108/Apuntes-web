@@ -1,4 +1,6 @@
 
+# Gramáticas y lenguajes
+
 ## Alfabetos
 
 Un alfabeto es un conjunto finito no vacío, sin elementos que se
@@ -258,15 +260,10 @@ Para hallar palabras de $L(G)$ debemos ir aplicando sucesivas veces las
 producciones hasta lograr palabras, comenzando por alguna de las
 producciones que comienzan con el símbolo inicial $S$.
 
-$$$$
 
-$$$$
 
-$$$$
 
-$$$$
 
-$$$$
 
 ## Árbol de derivación
 
@@ -457,7 +454,6 @@ Deterministicos** (A.F.N)
 Un Autómata finito es **Deterministico** si no tiene transiciones por
 $\lambda$ y $\delta$ cumple unicidad.
 
-$$$$
 
 ## Metodo para obtener la E.R. a partir del A.F.
 
@@ -477,7 +473,6 @@ Se escribe $p=a^*$
 
 Se escribe: $p= a^*(bq)$
 
-$$$$
 
 ![Gramaticas11.JPG](bfc0c497-Gramaticas11.JPG)
 
