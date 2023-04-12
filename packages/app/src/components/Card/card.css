@@ -48,13 +48,24 @@
 }
 
 .card-image {
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 150px;
+  min-height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: scale(1.63);
   font-size: large;
+  z-index: 1;
+}
+
+.svg-image svg {
+  filter: invert(90%) sepia(21%) saturate(0%) hue-rotate(81deg) brightness(94%) contrast(104%);
+  display: block;
+  max-width: 150px;
+  max-height: 150px;
+  transform: scale(1.2);
 }
 
 .card-image .math {
@@ -68,4 +79,10 @@
   scale: 1.05;
   rotate: 0.5deg;
   transition: scale, rotate 0.3s;
+}
+
+@media (prefers-color-scheme: light) {
+  .svg-image svg {
+    filter: invert(17%) sepia(20%) saturate(1244%) hue-rotate(166deg) brightness(90%) contrast(89%);
+  }
 }

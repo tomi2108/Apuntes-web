@@ -13,11 +13,15 @@ type CardProps = {
   onClick: (folder: string) => void;
 };
 
-const Card = ({ text, onClick, icon }: CardProps) => {
-  const [iconSvg, setIconSvg] = useState();
+const isSvg = (icon: string): boolean => {
+  return icon.includes("svg");
+};
 
-  console.log(iconSvg);
+const Card = ({ text, onClick, icon }: CardProps) => {
+  const [iconString, setIconString] = useState<string>();
+
   useEffect(() => {
+    if (isSvg(icon)) return setIconString(icon);
     const processor = unified()
       .use(remarkParse)
       .use(remarkMath, { singleDollarTextMath: true })
@@ -27,15 +31,30 @@ const Card = ({ text, onClick, icon }: CardProps) => {
     const tree = processor.parse(icon);
     const hastTree = processor.runSync(tree);
     //@ts-ignore
-    setIconSvg(processor.stringify(hastTree));
+    setIconString(processor.stringify(hastTree));
   }, [icon]);
+
+  console.log({ icon, iconString });
 
   return (
     <div className="card" onClick={() => onClick(text)}>
-      <div
-        className="card-image"
-        dangerouslySetInnerHTML={{ __html: iconSvg ? iconSvg : "" }}
-      ></div>
+      {isSvg(icon) ? (
+        <div
+          className="card-image svg-image"
+          dangerouslySetInnerHTML={{ __html: iconString ? iconString : "" }}
+        >
+          {/*  <img
+            src={`data:image/svg+xml;charset=utf-8,${
+              iconString ? iconString : ""
+            }`}
+          /> */}
+        </div>
+      ) : (
+        <div
+          className="card-image"
+          dangerouslySetInnerHTML={{ __html: iconString ? iconString : "" }}
+        ></div>
+      )}
       <div className="card-name">
         <p>{text}</p>
       </div>
