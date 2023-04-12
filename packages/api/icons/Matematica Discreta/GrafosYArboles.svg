@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<svg class="katex" viewbox="70 25 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<ellipse stroke="black" stroke-width="3" fill="none" cx="264.5" cy="129.5" rx="30" ry="30"/>
+	<text class="mbin" x="254.5" y="146.5" font-weight="700" font-size="35">*</text>
+	<ellipse stroke="black" stroke-width="3" fill="none" cx="222.5" cy="200.5" rx="30" ry="30"/>
+	<text class="mbin" x="206.5" y="207.5" font-weight="700" font-size="35">+</text>
+	<ellipse stroke="black" stroke-width="3" fill="none" cx="311.5" cy="200.5" rx="30" ry="30"/>
+	<text class="mbin" x="304.5" y="207.5" font-weight="700" font-size="35">-</text>
+	<ellipse stroke="black" stroke-width="3" fill="none" cx="376.5" cy="288.5" rx="30" ry="30"/>
+	<text class="mord mathnormal" x="366.5" y="298.5" font-weight="700" font-size="35">d</text>
+	<ellipse stroke="black" stroke-width="3" fill="none" cx="311.5" cy="288.5" rx="30" ry="30"/>
+	<text class="mord mathnormal" x="303.5" y="298.5" font-weight="700" font-size="35">c</text>
+	<ellipse stroke="black" stroke-width="3" fill="none" cx="244.5" cy="288.5" rx="30" ry="30"/>
+	<text class="mord mathnormal" x="236.5" y="298.5" font-weight="700" font-size="35">b</text>
+	<ellipse stroke="black" stroke-width="3" fill="none" cx="171.5" cy="288.5" rx="30" ry="30"/>
+	<text class="mord mathnormal" x="161.5" y="298.5" font-weight="700" font-size="35">a</text>
+	<polygon stroke="black" stroke-width="3" points="207.457,226.456 186.543,262.544"/>
+	<polygon fill="black" stroke-width="3" points="186.543,262.544 194.88,258.129 186.228,253.115"/>
+	<polygon stroke="black" stroke-width="3" points="229.776,229.604 237.224,259.396"/>
+	<polygon fill="black" stroke-width="3" points="237.224,259.396 240.134,250.422 230.433,252.847"/>
+	<polygon stroke="black" stroke-width="3" points="311.5,230.5 311.5,258.5"/>
+	<polygon fill="black" stroke-width="3" points="311.5,258.5 316.5,250.5 306.5,250.5"/>
+	<polygon stroke="black" stroke-width="3" points="329.324,224.631 358.676,264.369"/>
+	<polygon fill="black" stroke-width="3" points="358.676,264.369 357.945,254.963 349.901,260.905"/>
+	<polygon stroke="black" stroke-width="3" points="249.226,155.321 237.774,174.679"/>
+	<polygon fill="black" stroke-width="3" points="237.774,174.679 246.151,170.34 237.544,165.248"/>
+	<polygon stroke="black" stroke-width="3" points="281.06,154.516 294.94,175.484"/>
+	<polygon fill="black" stroke-width="3" points="294.94,175.484 294.694,166.054 286.355,171.574"/>
+</svg>

@@ -36,10 +36,14 @@ const getFolderIcon = (folder: string) => {
   return fs.readFileSync(`${iconsPath}/${folder}/folder.md`).toString();
 };
 
-const getFileIcon = (folder: string, file: string) => {
-  return fs
-    .readFileSync(`${iconsPath}/${folder}/${file.slice(0, -3)}.md`)
-    .toString();
+const getFileIcon = (folder: string, file: string): string => {
+  try {
+    return fs.readFileSync(`${iconsPath}/${folder}/${file}`).toString();
+  } catch {
+    return fs
+      .readFileSync(`${iconsPath}/${folder}/${file.slice(0, -3)}.svg`)
+      .toString();
+  }
 };
 
 export { getDirectories };
