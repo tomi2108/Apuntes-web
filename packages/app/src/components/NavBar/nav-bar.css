@@ -26,3 +26,13 @@
 .nav-item a:hover {
   background-color: #343A46;
 }
+
+@media (prefers-color-scheme: light) {
+  .nav-item a:hover {
+    background-color: #c5c5c5;
+  }
+
+  .nav-bar {
+    background-color: #e7e7e7;
+  }
+}

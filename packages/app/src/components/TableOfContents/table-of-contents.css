@@ -39,3 +39,13 @@
 .table-of-contents .toc-subtitle {
   padding-left: calc(1vw + 20px)
 }
+
+@media (prefers-color-scheme: light) {
+  .table-of-contents a:hover {
+    background-color: #c5c5c5;
+  }
+
+  .table-of-contents ul {
+    background-color: #e7e7e7;
+  }
+}
