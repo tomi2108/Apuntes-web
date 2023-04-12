@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify/lib";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype/lib";
 import { unified } from "unified";
+import { AppContext } from "../../App";
 import "./card.css";
 
 type CardProps = {
@@ -18,6 +19,8 @@ const isSvg = (icon: string): boolean => {
 };
 
 const Card = ({ text, onClick, icon }: CardProps) => {
+  const { articles } = useContext(AppContext);
+  console.log({ articles });
   const [iconString, setIconString] = useState<string>();
 
   useEffect(() => {
@@ -34,27 +37,12 @@ const Card = ({ text, onClick, icon }: CardProps) => {
     setIconString(processor.stringify(hastTree));
   }, [icon]);
 
-  console.log({ icon, iconString });
-
   return (
     <div className="card" onClick={() => onClick(text)}>
-      {isSvg(icon) ? (
-        <div
-          className="card-image svg-image"
-          dangerouslySetInnerHTML={{ __html: iconString ? iconString : "" }}
-        >
-          {/*  <img
-            src={`data:image/svg+xml;charset=utf-8,${
-              iconString ? iconString : ""
-            }`}
-          /> */}
-        </div>
-      ) : (
-        <div
-          className="card-image"
-          dangerouslySetInnerHTML={{ __html: iconString ? iconString : "" }}
-        ></div>
-      )}
+      <div
+        className={`card-image ${isSvg(icon) ? "svg-image" : ""}`}
+        dangerouslySetInnerHTML={{ __html: iconString ? iconString : "" }}
+      ></div>
       <div className="card-name">
         <p>{text}</p>
       </div>
