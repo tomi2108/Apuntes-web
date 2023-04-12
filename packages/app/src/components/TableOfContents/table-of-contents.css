@@ -25,7 +25,28 @@
   background-color: #343A46;
 }
 
+
+.table-of-contents a::after {
+  background: linear-gradient(transparent, #2BCAB7, transparent);
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  right: -1px;
+  top: 65%;
+  content: '';
+  opacity: 0;
+  transition: top 300ms ease, opacity 300ms ease;
+}
+
+.table-of-contents a:hover:after {
+  top: 17%;
+  opacity: 1;
+}
+
+
+
 .table-of-contents a {
+  position: relative;
   height: 3rem;
   border-radius: 0 7px 7px 0;
   color: inherit;
@@ -46,6 +67,6 @@
   }
 
   .table-of-contents ul {
-    background-color: #e7e7e7;
+    background-color: #FFFFFF;
   }
 }

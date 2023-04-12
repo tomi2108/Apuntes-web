@@ -1,5 +1,5 @@
 .card {
-  border: 5px solid rgba(255, 255, 255, 0.87);
+  background-color: #313641;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,17 +9,32 @@
   width: 250px;
   user-select: none;
   cursor: pointer;
+  position: relative;
 }
+
+.card::after {
+  background: linear-gradient(transparent, #2BCAB7, transparent);
+  height: 70px;
+  width: 1px;
+  position: absolute;
+  left: -1px;
+  top: 65%;
+  content: '';
+  opacity: 0;
+  transition: top 600ms ease, opacity 600ms ease;
+}
+
+.card:hover:after {
+  top: 25%;
+  opacity: 1;
+}
+
 
 @media (prefers-color-scheme: light) {
   .card {
-    border: 5px solid rgba(0, 0, 0, 0.87);
+    background-color: rgb(235 236 240)
   }
-
 }
-
-
-
 
 .card-name {
   text-align: center;
