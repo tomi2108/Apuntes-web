@@ -85,19 +85,19 @@ M_i(G) = (( m_{ij} ))   \text{tal que}\;\; m_{ij} =  \left\{\begin{matrix}
 $$
 
 
-Ejemplo para el mismo grafo anteriór.
+Ejemplo para el mismo grafo anterior.
 
 ![imagen.png](3d6a3532-imagen.png)
 
-## Función grado de un vertice
+## Función grado de un vértice
 
-El grado de un vertice es la cantidad de aristas incidentes en el, si se
+El grado de un vértice es la cantidad de aristas incidentes en el, si se
 trata de un bucle cuenta por $2$.
 
 En un grafo simple se denomina vértice colgante o pendiente al que tiene
 grado igual a uno.
 
-En un grafo simple un vertice es aislado si y solo si su grado es cero.
+En un grafo simple un vértice es aislado si y solo si su grado es cero.
 
 En todo grafo se cumple que la suma de los grados de los vértices es
 igual al doble de la cantidad de aristas.
@@ -243,7 +243,7 @@ grafo.
 
 **CONJUNTO DESCONECTANTE**: Dado un grafo $G = (V; A; \varphi)$ conexo,
 
-$B\subseteq A$ es desconectante $\Leftrightarrow \tilde{G}_B$ es no
+$B\subseteq A$ es desconectante ,$\Leftrightarrow \tilde{G}_B$ es no
 conexo.
 
 Es decir, un conjunto de aristas es desconectante si y sólo si su
@@ -269,14 +269,14 @@ La condición necesaria y suficiente para que en un grafo exista
 **camino** euleriano es:
 
 1.  El grafo debe ser conexo
-2.  Todos los vertices deben tener grado par, o a lo sumo dos grado
+2.  Todos los vértices deben tener grado par, o a lo sumo dos grado
     impar
 
 La condición necesaria y suficiente para que en un grafo exista
 **ciclo** euleriano es:
 
 1.  El grafo debe ser conexo
-2.  Todos los vertices deben tener grado par.
+2.  Todos los vértice deben tener grado par.
 
 ### Caminos y ciclos Hamiltonianos
 
@@ -285,7 +285,7 @@ cada vértice; y **ciclo hamiltoniano** al ciclo que pasa una sola vez
 por cada vértice.
 
 **Importante** : no necesariamente va a pasar por todas las aristas,
-pues en muchos casos repitiría vertices y no sería hamiltoniano.
+pues en muchos casos repetiría vértices y no sería hamiltoniano.
 
 ## Isomorfismos de grafos
 
@@ -305,7 +305,7 @@ $$
 Si no hay aristas paralelas, entonces es suficiente: \$ \\forall u,v
 \\in V_1 : {u, v}\\in A_1 \\Rightarrow{ f(u), f(v) } \\in A_2\$
 
-Esto significa que si en el primer grafo hay una arista entro deos
+Esto significa que si en el primer grafo hay una arista entro dos
 vértices, los correspondientes a estos vertices en el segundo grafo
 también deben estar unidos por una arista.
 
@@ -338,7 +338,7 @@ ordenamientos posibles de las matrices no coinciden. Esto último no es
 práctico pues como sabemos la cantidad de ordenamientos posibles de $n$
 elementos es igual a $n!$, lo cual es una cantidad bastante elevada
 
-# Digrafos
+# Dígrafos
 
 Un dígrafo es una terna $G = (V ; A ;\delta )$ siendo:
 
@@ -354,7 +354,7 @@ En este caso la función de incidencia se dice dirigida
 
 La función de incidencia $\delta$ le hace corresponder a cada arista un
 **PAR ORDENADO** de vértices, al primero se lo llama **EXTREMO INICIAL**
-de la arista, y el segundo es el **VERTICE FINAL**.
+de la arista, y el segundo es el **VÉRTICE FINAL**.
 
 Los caminos y los ciclos se definen de la misma forma que para los
 grafos no dirigidos, pero hay que respetar el sentido de las aristas.
@@ -363,7 +363,7 @@ Si todos los vértices son distintos se trata de un **camino simple**.
 
 Si todas las aristas son distintas, se trata de un **camino elemental**.
 
-## Función grado en un digrafo
+## Función grado en un dígrafo
 
 **GRADO POSITIVO**: cantidad de aristas que inciden positivamente en el
 vértice (son las que "entran" al vértice). Se denota $g^+(v)$
@@ -393,7 +393,7 @@ Se denota $g_N(v)$
 
 ## Pozos y fuentes
 
-En los digrafos puede haber vertices especiales de los que no \"sale\"
+En los dígrafos puede haber vertices especiales de los que no \"sale\"
 ninguna arista y se denominan **pozos**. Otros, a los que no \"llega\"
 ninguna aristas y se los denominan **fuentes**.
 
@@ -435,18 +435,18 @@ incidencia de $G$ a una matriz de $n\times m$:
 
 $$
 M_i(G) = (( m_{ij} ))   \text{tal que}\;\; m_{ij} =  \left\{\begin{matrix}
-1 \;\text{si}\;\;v_i \;\;\text{es vertice incial de}\;\; a_j\\
--1 \;\text{si}\;\;v_i \;\;\text{es vertice final de}\;\; a_j\\
+1 \;\text{si}\;\;v_i \;\;\text{es vértice inicial de}\;\; a_j\\
+-1 \;\text{si}\;\;v_i \;\;\text{es vértice final de}\;\; a_j\\
 0 \;\text{si}\;\;v_i \;\;\text{no es extremo de}\;\; a_j
 \end{matrix}\right.
 $$
 
 
-Ejemplo para el mismo digrafo anterior.
+Ejemplo para el mismo dígrafo anterior.
 
 ![Grafos9.JPG](965511e1-Grafos9.JPG)
 
-## Grafo asociado a un digrafo
+## Grafo asociado a un dígrafo
 
 Dado un dígrafo, si se cambian las aristas dirigidas por aristas no
 dirigidas, se obtiene el grafo asociado. Es decir hay que ignorar el
@@ -454,14 +454,14 @@ sentido de las aristas.\
 Si en el dígrafo original hay aristas paralelas o antiparalelas, en el
 grafo asociado sólo se representa una de ellas.
 
-### Conexidad en digrafos
+### Conexidad en dígrafos
 
 Todo dígrafo cuyo grafo asociado sea conexo, se denomina DÍGRAFO CONEXO.
 
 Todo dígrafo en el que exista algún camino entre todo par de vértices se
 denomina **DÍGRAFO FUERTEMENTE CONEXO**
 
-## Caminos de Euler y Hamilton en digrafos
+## Caminos de Euler y Hamilton en dígrafos
 
 Se definen de forma similar que para grafos no dirigidos, pero hay que
 respetar el sentido de las aristas.
@@ -479,7 +479,7 @@ $$
 
 \$\$\$\$
 
-## Isomorfismo de digrafos
+## Isomorfismo de dígrafos
 
 El concepto de isomorfismo de dígrafos es igual que para grafos, pero
 hay que tener en cuenta la dirección de las aristas, es decir el grado
@@ -493,9 +493,9 @@ los vértices del mismo grado positivo o negativo
 
 Llamaremos árbol a todo grafo conexo y sin ciclos.
 
-**Condicion necesaria y suficiente**:
+**Condición necesaria y suficiente**:
 
-Un arbol es un grafo en el cual entre todo par de vértices existe un
+Un árbol es un grafo en el cual entre todo par de vértices existe un
 único camino simple.
 
 ### Propiedades básicas de los árboles
@@ -514,7 +514,7 @@ En un bosque de $k$ componentes se cumple que $|V| = |A| + k$
 
 ### Árboles dirigidos
 
-Un digrafo se denomina árbol dirigido cuando su grafo asociado es un
+Un dígrafo se denomina árbol dirigido cuando su grafo asociado es un
 árbol.
 
 De los árboles dirigidos nos interesa estudiar los árboles con raíz.
@@ -585,7 +585,7 @@ Sea $G = ( V ; A ;\delta )$ un árbol con raíz $r$. Sea $v\in V$, se
 llama subárbol con raíz $v$, y se indica $T(v)$, al árbol que consta de
 $v$, todos sus descendientes y las aristas entre ellos.
 
-## Recorrido de un arbol
+## Recorrido de un árbol
 
 ![Grafos12.JPG](41e4580a-Grafos12.JPG)
 

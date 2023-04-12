@@ -4,37 +4,37 @@
 ## Sucesiones
 
 Una sucesión es una función f:
-$\mathbb{N} \rightarrow \mathbb{R} \,\,/\,\, \forall n \in \mathbb{N}: f(n) = a_n$
+$\mathbb{N} \rightarrow \mathbb{R} \forall n \in \mathbb{N}: f(n) = a_n$
 
 Una sucesión recursiva es aquella en la que su termino general hace
-referencia a terminos anteriores.
+referencia a términos anteriores.
 
 Por ej: $a_n = 2 \cdot a_{n-1}$ con $a_1 = 4$
 
 Si queremos saber ahora el valor del término $a_{102}$ no podemos ya que
-necesitos el $a_{101}$ y para este el $a_{100}$, etc.
+se necesita el $a_{101}$ y para este el $a_{100}$, etc.
 
-A las sucesiones dadas en forma recurseiva se las llama **Relaciones o
-ecuaciones de recurrencia**: $a_n = f(a_1,a_2,\text{...}\,, a_{n-1})$
+A las sucesiones dadas en forma recursiva se las llama **Relaciones o
+ecuaciones de recurrencia**: $a_n = f(a_1,a_2,\text{...}\, a_{n-1})$
 
-## Clasificacion de las relaciones de recurrencia
+## Clasificación de las relaciones de recurrencia
 
 **Orden**: Es la mayor diferencia entre los subíndices de los elementos
-de la sucesion que figuran en la relacion de recurrencia. Es decir, el
+de la sucesión que figuran en la relación de recurrencia. Es decir, el
 orden indica cuantos términos anteriores hay que conocer para obtener
 uno en particular.
 
 **Grado**: Es el mayor exponente al que están elevados los elementos de
-la sucesion que figuran en la relación de recurrencia.
+la sucesión que figuran en la relación de recurrencia.
 
-**Ecuacion homogenea**: Al igual que las ecuaciones algebraicas, las
-homogéneas son las que no tienen terminos independientes; pero en este
+**Ecuación homogénea**: Al igual que las ecuaciones algebraicas, las
+homogéneas son las que no tienen términos independientes; pero en este
 caso no necesariamente los términos independientes son constantes sino
-que todos aquellos en los que no figuran elementos de la sucesion. Por
+que todos aquellos en los que no figuran elementos de la sucesión. Por
 ej: $3n, 4, n^2$
 
 **Coeficientes constantes**: en estas ecuaciones ninguno de los
-coeficientes de los elementos de la sucesion depende de n. Por el
+coeficientes de los elementos de la sucesión depende de n. Por el
 contrario, si alguno depende de n, se dice que la ecuación tiene
 coeficientes variables.
 
@@ -51,11 +51,11 @@ $a_n = k^n \cdot a_0$
 
 ### Demostración:
 
-$p(n): \,\,a_n = k^n \cdot a_0 \;\; \forall n \geq 0$
+$p(n): a_n = k^n \cdot a_0 \hspace{10pt} \forall n \geq 0$
 
 #### Paso base
 
-\$n=0: \\hspace{15pt} a_0 = k\^0 \\cdot a_0 = a_0 \$ entonces se cumple
+$n=0: \hspace{15pt} a_0 = k^0 \cdot a_0 = a_0 $ entonces se cumple
 que $p(0)$ es V
 
 #### Paso inductivo:
@@ -73,9 +73,9 @@ verdadera
 
 ## Homogéneas lineales de orden 2
 
-\$c_n a_n + c\_{n-1}a\_{n-1}+ c\_{n-2} a\_{n-2} = 0 \$
+$c_n a_n + c\_{n-1}a\_{n-1}+ c\_{n-2} a\_{n-2} = 0 $
 
-Supongamos que $a_n = x^n$ es una solucion de la ecuacion.
+Supongamos que $a_n = x^n$ es una solución de la ecuación.
 
 
 $$
@@ -89,11 +89,11 @@ x^{n-2}\cdot (c_n x^2 + c_{n-1}x + c_{n-2} ) = 0
 $$
 
 
-$c_n x^2 + c_{n-1}x + c_{n-2}$ es la ecuacion caracteristica y sus
+$c_n x^2 + c_{n-1}x + c_{n-2}$ es la ecuación característica y sus
 raíces pueden ser: reales y distintas, reales e iguales o complejas
 conjugadas
 
-Sean \$r_1 \$ y $r_2$ las raices de la ecuacion caracteristica entonces
+Sean $r_1 $ y $r_2$ las raíces de la ecuación característica entonces
 la solución general será:
 
 
@@ -108,19 +108,19 @@ $$
 ### Ej:
 
 Sea
-$a_n - 3 a_{n-1} + 2a_{n-2}= 0 \hspace{15pt} \text{con}\,\, a_0 = 4 \;\;\wedge a_1 = 7$
+$a_n - 3 a_{n-1} + 2a_{n-2}= 0 \hspace{15pt} \text{con}\ a_0 = 4 \hspace{10pt}\wedge a_1 = 7$
 
-Escribimos la ecuación caracteristica y hallamos sus raices, luego
+Escribimos la ecuación característica y hallamos sus raíces, luego
 armamos un sistema de ecuaciones con las condiciones iniciales y
-buscamos las constantes de la solucion general.
+buscamos las constantes de la solución general.
 
 
 $$
 \begin{matrix}
-x^2 -3x + 2 = 0 \Rightarrow x=1 \,\,\vee\,\, x=2 \Rightarrow \\
+x^2 -3x + 2 = 0 \Rightarrow x=1 \vee x=2 \Rightarrow \\
 a_n = k_1 + k_2\cdot 2^n \Rightarrow \\
-a_0 = k_1 + k_2 = 4 \,\,\wedge \,\, a_1 = k_1 + 2\cdot k_2 =7 \Rightarrow\\
-k_1=1 \,\, \wedge \,\, k_2=3 \Rightarrow a_n = 1+3\cdot 2^n
+a_0 = k_1 + k_2 = 4 \wedge \ a_1 = k_1 + 2\cdot k_2 =7 \Rightarrow\\
+k_1=1 \wedge \ k_2=3 \Rightarrow a_n = 1+3\cdot 2^n
 \end{matrix}
 $$
 
@@ -129,12 +129,12 @@ $$
 
 $c_n \cdot a_n + c_{n-1} \cdot a_{n-1} = f(n)$
 
-La solucion general está dada por la suma solución de la ecuacion
-homogénea asociada y una solucion particular de la ecuacion dada.
+La solución general está dada por la suma solución de la ecuación
+homogénea asociada y una solución particular de la ecuación dada.
 
 $a_n = a_{nH} + a_{nP}$
 
-**NOTA**: La solucion de la ecuacion homogénea asociada es la general,
+**NOTA**: La solución de la ecuación homogénea asociada es la general,
 sin tener en cuenta las condiciones iniciales.
 
 La solución particular se plantea como función del mismo tipo que
@@ -165,17 +165,17 @@ K \cdot a^n & B \cdot a^n
 $$
 
 
-### Ej: {#ej}
+### Ej:
 
 Resolver: $a_{n+1} = 2a_{n} + 1$ con $a_1 = 1$
 
 Ecuación homogénea asociada: $a_{n+1} = 2a_n$ cuya solución general
-es:\$a\_{nH} = k \\cdot 2\^n \$ (sin tener en cuenta las condiciones
+es:$a\_{nH} = k \\cdot 2\^n $ (sin tener en cuenta las condiciones
 iniciales)
 
 Solución particular: como en este caso el término independiente es $1$,
 el planteo también es una constante $B$. Es decir supongo que
-$a_{nP} = B$ Reemplzo en la ecuacion origianl, para poder despejar el
+$a_{nP} = B$ Reemplazo en la ecuación original, para poder despejar el
 valor de $B$:
 
 
@@ -186,14 +186,14 @@ $$
 
 Formo la solución total: $a_n = a_{nH} + a_{nP} = k \cdot 2^n -1$
 
-Recien ahora uso las condiciones inciales para hallar la constante $k$
+Recién ahora uso las condiciones iniciales para hallar la constante $k$
 
 $$
 1=k\cdot 2 - 1 \Rightarrow k=1
 $$
 
 
-Por lo tanto \$a_n = 2\^n -1 \$ es la solución particular pedida.
+Por lo tanto $a_n = 2\^n -1 $ es la solución particular pedida.
 
 ## No homogéneas lineales de orden 2
 
@@ -201,39 +201,39 @@ $c_n \cdot a_n + c_{n-1} \cdot a_{n-1}+ c_{n-2} \cdot a_{n-2} = f(n)$
 
 $a_n = a_{nH} + a_{nP}$
 
-### Ej: {#ej}
+### Ej
 
 Resolver:
-$a_{n+2} - 4a_{n+1} +3a_n = -2 \hspace{15pt} \text{con}\hspace{15pt} a_0 = 7 \,\,\wedge\,\, a_1 = 12$
+$a_{n+2} - 4a_{n+1} +3a_n = -2 \hspace{15pt} \text{con}\hspace{15pt} a_0 = 7 \\wedge\ a_1 = 12$
 
-Vamos a hallar la solución general de la homogenea asociada. Para ello
-planteamos la ecuacion caracteristica.
+Vamos a hallar la solución general de la homogénea asociada. Para ello
+planteamos la ecuación característica.
 
-$x^2 - 4x + 3 = 0 \Rightarrow x = 1 \; \vee \; x=3 \Rightarrow a_{nH} = k_1 \cdot 1^n + k_2 \cdot 3^n = k_1 + k_2 \cdot 3^n$
+$x^2 - 4x + 3 = 0 \Rightarrow x = 1 \hspace{10pt} \vee \hspace{10pt} x=3 \Rightarrow a_{nH} = k_1 \cdot 1^n + k_2 \cdot 3^n = k_1 + k_2 \cdot 3^n$
 
-Buscamos una solucion particular: Para ello proponemos una constante $B$
-y reemplazamos en la ecuacion original.
+Buscamos una solución particular: Para ello proponemos una constante $B$
+y reemplazamos en la ecuación original.
 
 $B-4B+3B = -2 \Rightarrow 0=-2$ ABSURDO
 
-Entonces proponemos $a_{nP} = B\cdot n$ y reemplazamos en la ecuacion
+Entonces proponemos $a_{nP} = B\cdot n$ y reemplazamos en la ecuación
 original.
 
-\$ B\\cdot(n+2)-4B\\cdot(n+1)+3B\\cdot n = -2 \\Rightarrow B \\cdot n +
-2 B-4B\\cdot n -4B +3B\\cdot n = -2 \\Rightarrow -2B = -2 \\Rightarrow
-B=1 \$
+$ B\cdot(n+2)-4B\cdot(n+1)+3B\cdot n = -2 \Rightarrow B \cdot n +
+2 B-4B\cdot n -4B +3B\cdot n = -2 \Rightarrow -2B = -2 \Rightarrow
+B=1 $
 
 Entonces: $a_{nP} = 1\cdot n = n$
 
-Aramamos la solución total:
+Armamos la solución total:
 $a_n = a_{nH} + a_{nP} = k_1 + k_2 \cdot 3^n + n$
 
 Por ultimo planteamos las condiciones iniciales y buscamos la solución
 particular pedida.
 
-\$a_0 = 7 ;; \\wedge ;; a_1=12 \\Rightarrow k_1 + k_2 = 7 ;;\\wedge ;;
-k_1 + 3k_2 + 1 = 12 \$
+$a_0 = 7 \wedge a_1=12 \Rightarrow k_1 + k_2 = 7\wedge
+k_1 + 3k_2 + 1 = 12 $
 
-Resolviendo queda: $k_1 = 5 \;\;\wedge\;\; k_2 = 2$
+Resolviendo queda: $k_1 = 5 \hspace{10pt}\wedge\hspace{10pt} k_2 = 2$
 
 Por lo tanto la solución pedida es: $5 + 2\cdot 3^n + n$

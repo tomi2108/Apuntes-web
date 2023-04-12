@@ -62,7 +62,7 @@ $$
 
 1.  $(w^R)^R = w$
 2.  $\lambda^R = \lambda$
-3.  \$(w \\cdot y)\^R = y\^R \\cdot w\^R \$
+3.  $(w \cdot y)\^R = y\^R \cdot w\^R $
 4.  $long(w^R) = long(w)$
 
 ### Palíndrome
@@ -106,8 +106,8 @@ Algunos lenguajes especiales son $L= \{\lambda \} = \Lambda$ se llama
 
 ### Concatenacion de lenguajes
 
-\$L = L_1 \\cdot L_2 = {x\\cdot y ;;/;; x\\in L_1 ;;\\wedge ;; y \\in
-L_2 } \$
+$L = L_1 \cdot L_2 = {x\cdot y x\in L_1\wedge y \in
+L_2 } $
 
 Son todas las palabras que se pueden formar concatenando cualquier
 palabra de $L_1$ con cualquier palabras de $L_2$
@@ -129,7 +129,7 @@ palabra de $L_1$ con cualquier palabras de $L_2$
 
 
 $$
-L^R = \{w^R \;\;/ \;\; w \in L\}
+L^R = \{w^R \hspace{5pt}/ \hspace{5pt} w \in L\}
 $$
 
 
@@ -194,15 +194,15 @@ $$
 
 Sea $V= \{a,b\}$
 
-$L_1 = \{w \in V^* \;\;/\;\; w \;\;\text{comienza con} \;\;a \}$
+$L_1 = \{w \in V^* \hspace{5pt}/\hspace{5pt} w \hspace{5pt}\text{comienza con} \hspace{5pt}a \}$
 
 Entonces el complemento de $L_1$ es:
 
-$\bar{L}_1 = \{w \in V^* \;\;/\;\; w \;\;\text{ no comienza con} \;\;a \}$
+$\bar{L}_1 = \{w \in V^* \hspace{5pt}/\hspace{5pt} w \hspace{5pt}\text{ no comienza con} \hspace{5pt}a \}$
 
-# Gramaticas
+# Gramáticas
 
-Una gramatica es una cuaterna $G = (V_n;V_t;P;S)$ siendo:
+Una gramática es una cuaterna $G = (V_n;V_t;P;S)$ siendo:
 
 $V_n$: Vocabulario o alfabeto de **no terminales**
 
@@ -210,7 +210,7 @@ $V_t$: Vocabulario o alfabeto de **terminales**
 
 $P$: Producciones
 
-$S$: simbolo variable incial
+$S$: símbolo variable inicial
 
 ***Requisitos***
 
@@ -218,8 +218,8 @@ $S$: simbolo variable incial
 
 2.  $V_n \cap V_t = \emptyset$
 
-3.  $P$ es finito y $P \subset (V^+ - V_t^*)$ siendo \$V = V_n \\cup V_t
-    \$
+3.  $P$ es finito y $P \subset (V^+ - V_t^*)$ siendo $V = V_n \cup V_t
+    $
 
 4.  $S$ pertenece a $V_n$
 
@@ -241,9 +241,9 @@ para hacer el reemplazo.
 4\) Puede haber varias gramáticas que generen un mismo lenguaje, pero el
 lenguaje que genera una gramática es único.
 
-### Ej: {#ej}
+### Ej:
 
-Sea la gramatica $G = \{\left(\{S,X,Y\},\{a,b,c\},P,S \right)\}$ con el
+Sea la gramática $G = \{\left(\{S,X,Y\},\{a,b,c\},P,S \right)\}$ con el
 conjunto $P$ :
 $$
 \begin{matrix}
@@ -258,26 +258,26 @@ Para hallar palabras de $L(G)$ debemos ir aplicando sucesivas veces las
 producciones hasta lograr palabras, comenzando por alguna de las
 producciones que comienzan con el símbolo inicial $S$.
 
-\$\$\$\$
+$$$$
 
-\$\$\$\$
+$$$$
 
-\$\$\$\$
+$$$$
 
-\$\$\$\$
+$$$$
 
-\$\$\$\$
+$$$$
 
 ## Árbol de derivación
 
-Es un arbol cuya raíz es el simbolo inicial, y cada vértice tiene tantos
+Es un árbol cuya raíz es el símbolo inicial, y cada vértice tiene tantos
 hijos como producciones diferentes existan que parten de dicho vértice.
 Es decir: Si $A\rightarrow B$, entonces $A$ es padre de B. Si
 $A \rightarrow B + C$, entonces $A$ tiene dos hijos: $B$ y $C$. En este
 tipo de arboles, las hojas son las palabras del lenguaje, y cada rama
 nos da la derivación de dicha palabra.
 
-Construiremos el arbol de derivación de la gramatica de arriba.
+Construiremos el árbol de derivación de la gramática de arriba.
 
 Comenzamos con las producciones de $S$
 
@@ -313,11 +313,11 @@ tanto el lenguaje que genera esta Gramática es:
 
 
 $$
-L(G) = \{ a^mac^nbab^m \;\;/\;\; n\geq 0 , m\geq 0  \}
+L(G) = \{ a^mac^nbab^m \hspace{5pt}/\hspace{5pt} n\geq 0 , m\geq 0  \}
 $$
 
 
-Dos gramaticas son **equivalentes** si generan el mismo Lenguaje.
+Dos gramáticas son **equivalentes** si generan el mismo Lenguaje.
 
 ### Tipos de Gramáticas
 
@@ -326,19 +326,19 @@ $$
 \begin{vmatrix}
 \text{Tipo} &\text{Nombre}  &\text{Producciones} \\
  0&\text{Irrestricta}  &\text{Cualquier forma} \\
- 1&\text{Sensible al contexto}  &aXb\rightarrow aYb\;\; \text{donde}\;\; a,b,Y\in V^*, X \in V_n  \\
- 2& \text{Independiente del contexto} &X \rightarrow Y \;\;\text{donde}\;\; X \in V_n \\
- 3& \text{Regular} & X\rightarrow Y \;\;\text{donde}\;\; X \in V_n, Y\;\;\text{puede ser}\;\; Vt,tV,t,\lambda
+ 1&\text{Sensible al contexto}  &aXb\rightarrow aYb\hspace{5pt} \text{donde}\hspace{5pt} a,b,Y\in V^*, X \in V_n  \\
+ 2& \text{Independiente del contexto} &X \rightarrow Y \hspace{5pt}\text{donde}\hspace{5pt} X \in V_n \\
+ 3& \text{Regular} & X\rightarrow Y \hspace{5pt}\text{donde}\hspace{5pt} X \in V_n, Y\hspace{5pt}\text{puede ser}\hspace{5pt} Vt,tV,t,\lambda
 \end{vmatrix}
 $$
 
 
-Se dice que un Lenguaje $L$ es regular si existe una gramatica regular
+Se dice que un Lenguaje $L$ es regular si existe una gramática regular
 que lo genera.
 
-#### Ej: {#ej}
+#### Ej:
 
-Sea \$G= {(A,B,C),{0,1,2},P,A } \$
+Sea $G= {(A,B,C),{0,1,2},P,A } $
 
 Tipo $0$:
 $$
@@ -382,14 +382,14 @@ $$
 
 ## Expresiones regulares
 
-Una $E.R.$ es una secuencia de elementos que verfica:
+Una $E.R.$ es una secuencia de elementos que verifica:
 $$
 \begin{matrix}
-\lambda\; \text{es}\; ER \\
-a \in V \Rightarrow a\;\text{es}\; ER\\
-\text{Si}\;X,Y\;\text{son}\;ER \Rightarrow X\cdot Y \;\text{es}\;ER\\
-\text{Si}\;X,Y\;\text{son}\;ER \Rightarrow X + Y \;\text{es}\;ER\\
-\text{Si}\;X\;\text{es}\;ER \Rightarrow X^* \;\text{es}\;ER
+\lambda\hspace{5pt} \text{es}\hspace{5pt} ER \\
+a \in V \Rightarrow a\hspace{5pt}\text{es}\hspace{5pt} ER\\
+\text{Si}\hspace{5pt}X,Y\hspace{5pt}\text{son}\hspace{5pt}ER \Rightarrow X\cdot Y \hspace{5pt}\text{es}\hspace{5pt}ER\\
+\text{Si}\hspace{5pt}X,Y\hspace{5pt}\text{son}\hspace{5pt}ER \Rightarrow X + Y \hspace{5pt}\text{es}\hspace{5pt}ER\\
+\text{Si}\hspace{5pt}X\hspace{5pt}\text{es}\hspace{5pt}ER \Rightarrow X^* \hspace{5pt}\text{es}\hspace{5pt}ER
 \end{matrix}
 $$
 
@@ -401,23 +401,16 @@ disyunciones $(+)$ y clausuras de Kleene $(*)$
 **Propiedad**: Para cada Lenguaje regular, existe una expresión regular
 que lo define.
 
-### Ej: {#ej}
+### Ej:
 
 El lenguaje regular:
-$L =\{1^n0^m2^{2p+1}(0 \,\vee\, 1 ) \;/\; n\geq 0, m\geq 1, p\geq 0\}$
+$L =\{1^n0^m2^{2p+1}(0 \hspace{5pt}\vee\hspace{5pt} 1 ) \hspace{5pt}/\hspace{5pt} n\geq 0, m\geq 1, p\geq 0\}$
 Se puede indicar con la $ER$:
 $$
-1^*00^*(22)^*2(0\,+\, 1)
+1^*00^*(22)^*2(0\hspace{5pt}+\hspace{5pt} 1)
 $$
 
-
-\$\$\$\$
-
-\$\$\$\$
-
-\$\$\$\$
-
-# Automatas
+# Autómatas
 
 Cada lenguaje tiene su propia maquina reconocedora del mismo.
 
@@ -426,18 +419,18 @@ $$
 \begin{vmatrix}
 \text{Lenguaje Tipo} & \text{Maquina que lo reconoce}\\
  0&\text{Maquina de Turing} \\
- 1&\text{Automata linealmente acotado} \\
- 2&\text{Automata de pila (Push Down)} \\
- 3&\text{Automata Finito}
+ 1&\text{Autómata linealmente acotado} \\
+ 2&\text{Autómata de pila (Push Down)} \\
+ 3&\text{Autómata Finito}
 \end{vmatrix}
 $$
 
 
-En esta asignatura solo estudiaremos los **Automatas Finitos**
+En esta asignatura solo estudiaremos los **Autómatas Finitos**
 
-## Automatas Finitos
+## Autómatas Finitos
 
-Un automata Finito es una $5$-upla: $(Q,V,\delta,q_0,F)$ donde:
+Un autómata Finito es una $5$-upla: $(Q,V,\delta,q_0,F)$ donde:
 
 $Q$: Conjunto finito de estados.
 
@@ -449,24 +442,24 @@ $q_0$: Estado inicial.
 
 $F$: Conjunto de estados finales $F\neq \emptyset$ y $F\subset Q$
 
-Los Automatas Finitos se pueden representar con **Tablas de transición**
+Los Autómatas Finitos se pueden representar con **Tablas de transición**
 o con **Diagramas de transición de estados**.
 
-Un Automata acepta una palabra si y solo si al ir ingresando letra por
+Un Autómata acepta una palabra si y solo si al ir ingresando letra por
 letra desde el estado inicial llega a un estado final cuando termina la
 palabra.
 
-### Clasificación de los A.F. {#clasificación-de-los-af}
+### Clasificación de los A.F.
 
-Los Automatas finitos pueden ser **Deterministicos** (A.F.D) o **No
+Los Autómatas finitos pueden ser **Deterministicos** (A.F.D) o **No
 Deterministicos** (A.F.N)
 
-Un Automata finito es **Deterministico** si no tiene transiciones por
+Un Autómata finito es **Deterministico** si no tiene transiciones por
 $\lambda$ y $\delta$ cumple unicidad.
 
-\$\$\$\$
+$$$$
 
-## Metodo para obtener la E.R. a partir del A.F. {#metodo-para-obtener-la-er-a-partir-del-af}
+## Metodo para obtener la E.R. a partir del A.F.
 
 ![Gramaticas7.JPG](42ee2256-Gramaticas7.JPG)
 
@@ -484,17 +477,17 @@ Se escribe $p=a^*$
 
 Se escribe: $p= a^*(bq)$
 
-\$\$\$\$
+$$$$
 
 ![Gramaticas11.JPG](bfc0c497-Gramaticas11.JPG)
 
 Se escribe $p = \lambda$
 
-## Obtencion de la G.R. a partir del A.F. {#obtencion-de-la-gr-a-partir-del-af}
+## Obtencion de la G.R. a partir del A.F
 
 Sea $A=(Q,V,\delta ,q_0,F)$ queremos hallar una Gramatica
 $G=(V_n,V_t,P,S)$ que genere el mismo lenguaje que es reconocido por el
-automata.
+Autómata.
 
 Los elementos de la gramatica se obtienen de la siguiente forma:
 
@@ -507,23 +500,23 @@ $S = q_0$ (El símbolo inicial es el que era estado inicial)
 Y las producciones $P$ son tales que: $q\rightarrow a \delta(q,a)$ y
 $q\rightarrow \lambda$ si $q$ es estado final.
 
-## Obtencion del A.F. a partir de la G.R. {#obtencion-del-af-a-partir-de-la-gr}
+## Obtención del A.F. a partir de la G.R.
 
-Dada $G=(V_n,V_t,P,S)$ queremos hallar un automata
+Dada $G=(V_n,V_t,P,S)$ queremos hallar un Autómata
 $A=(Q,V,\delta ,q_0,F)$ que reconozca el lenguaje generado por esta
-gramatica.
+gramática.
 
-Los elementos del automata se obtienen de la siguiente forma:
+Los elementos del Autómata se obtienen de la siguiente forma:
 
-\$Q = V_n \\cup{f} \$ (Los estados son las variables más un nuevo estado
+$Q = V_n \cup{f} $ (Los estados son las variables más un nuevo estado
 que se agrega)
 
 $V = V_t$ (El alfabeto de entrada es el alfabeto de terminales)
 
 $q_0 = S$ (El estado inicial es el que era el símbolo inicial)
 
-$F = \{ q\in V_n \;\;/\;\; q \rightarrow \lambda \}\cup \{f\}$ (Los
-estados finales son todos los que producían la palabra unla y además el
+$F = \{ q\in V_n \hspace{5pt}/\hspace{5pt} q \rightarrow \lambda \}\cup \{f\}$ (Los
+estados finales son todos los que producían la palabra nula y además el
 estado que se agrega)
 
 Y la función de transición $\delta$ es tal que:
@@ -531,8 +524,8 @@ Y la función de transición $\delta$ es tal que:
 
 $$
 \begin{matrix}
-\delta(q,a)=p \;\;\text{si}\;\;q\rightarrow ap\\
-\delta(q,a)=f \;\;\text{si}\;\;q\rightarrow a\\
+\delta(q,a)=p \hspace{5pt}\text{si}\hspace{5pt}q\rightarrow ap\\
+\delta(q,a)=f \hspace{5pt}\text{si}\hspace{5pt}q\rightarrow a\\
 \delta(t,a)=\emptyset
 \end{matrix}
 $$

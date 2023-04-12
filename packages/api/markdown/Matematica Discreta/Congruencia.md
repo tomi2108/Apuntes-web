@@ -10,7 +10,7 @@ $$
 La congruencia en modulo n es una relación de equivalencia, por lo tanto
 es **reflexiva, simétrica y transitiva**
 
-Por ser una clase de equivalencia genera una partición en el cojunto.
+Por ser una clase de equivalencia genera una partición en el conjunto.
 
 Clases de equivalencia:
 
@@ -60,11 +60,11 @@ $$
 $$
 
 
-Esta función se aplica a los numeros enteros positivos, y nos da la
+Esta función se aplica a los números enteros positivos, y nos da la
 cantidad de números menores o iguales al dado que son coprimos con dicho
 numero.
 
-### Propeidades de la funcion de Euler
+### Propiedades de la función de Euler
 
 1.  Si p es un número primo, entonces:
 $$
@@ -104,15 +104,15 @@ $a^p \equiv a(p)$
 Este teorema se utiliza para investigar si un numero natural muy grande
 es o no primo. Si el numero dado fuera primo, con cualquier numero
 natural $a$ menor que $p$ debe cumplirse que $a^{p-1}\equiv 1(p)$. Se va
-calculando con distintos valores de $a$. Si para algún cvalor de $a$
+calculando con distintos valores de $a$. Si para algún valor de $a$
 menor que $n$ no se cumple la congruencia entonces $n$ es compuesto.
 
 Nosotros vamos a utilizarlo para hallar el resto de la división de un
-numero entero grando por un numero primo.
+numero entero por un numero primo.
 
 ### Ej:
 
-Calculemos el resto de la division de $7^{122}$ por $11$.
+Calculemos el resto de la división de $7^{122}$ por $11$.
 
 Como \$122 = 10 \\cdot 12 + 2 \$, se tiene que:
 
@@ -131,12 +131,12 @@ Si $m.c.d(a,n) = 1 \Rightarrow a^{\varphi(n)} \equiv 1(n)$
 
 Calculemos el resto de dividir $8^{1791485}$ por $21$.
 
-Como $21$ no es primo, utilizaremos el teorema de Eueler-Fermat, para
+Como $21$ no es primo, utilizaremos el teorema de Euler-Fermat, para
 ello, primero calculamos $\varphi(21) = 12$
 
 Como: $8^{\varphi(21)}\equiv 1(21)$ entonces: $8^{12}\equiv 1(21)$
 
-Para poder usar este resultado, decomponemos el numero $1791485$
+Para poder usar este resultado, descomponemos el numero $1791485$
 
 \$1791485 = 12\\cdot 149290 + 5 \\Rightarrow 8\^{1791485} = 8\^{12\\cdot
 149290 + 5} = (8\^{12})\^{149290} \\cdot 8\^5 \$
@@ -144,7 +144,7 @@ Para poder usar este resultado, decomponemos el numero $1791485$
 Como $8^{12}\equiv 1(21)$ entonces \$8\^{1791485}\\equiv 1 \\cdot 8\^5
 (21) \$
 
-Y ya tenemos un nuúmero bastante mas chico, aunque lo podemos escribir
+Y ya tenemos un número bastante mas chico, aunque lo podemos escribir
 por ejemplo: $8^5 = 8^2 \cdot 8^2 \cdot 8$ y como
 $8^2 = 64 \equiv 1(21)\Rightarrow 8^5 \equiv 8 (21)$
 
@@ -157,11 +157,11 @@ Son de la forma $a\cdot x \equiv b(n)$ siendo $a,x,b$ enteros y $n$
 natural.
 
 Si \$x \\in \\mathbb{Z} \$ es una solución de $a\cdot x \equiv b(n)$
-entonces $x+kn$ también es una solución. Como son infintias soluciones
+entonces $x+kn$ también es una solución. Como son infinitas soluciones
 consideramos, $0 \leq x < n$ y las llamaremos soluciones principales.
 
-**Las eucuaciones lineal de congruencia pueden tener una, mas de una o
-niguna solución en $Z_n$**
+**Las ecuaciones lineal de congruencia pueden tener una, mas de una o
+ninguna solución en $Z_n$**
 
 ### Condición suficiente para que una ecuación de congruencia tenga solución
 

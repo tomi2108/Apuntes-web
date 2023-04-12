@@ -5,23 +5,23 @@
 
 ### Cerrada
 
-Una operación $*$ es cerrada en un conjuto si el resultado de operar dos
-elemntos es siempre un elemento del mismo conjunto.
+Una operación $*$ es cerrada en un conjunto si el resultado de operar dos
+elementos es siempre un elemento del mismo conjunto.
 
 $\forall x, y ∈ A : x * y ∈ A$
 
-A las operaciones cerradas tambien se las llama leyes de composición
+A las operaciones cerradas también se las llama leyes de composición
 interna.
 
 La tabla debe contener solo elementos del conjunto.
 
 ### Asociativa
 
-Se dice que una operacion $*$ es asociativa si:
+Se dice que una operación $*$ es asociativa si:
 
-\$\forall a, b, c ∈ A : a \* ( b \* c ) = ( a \* b ) \* c \$
+$\forall a, b, c ∈ A : a * ( b * c ) = ( a * b ) * c $
 
-Se pueden cambiar los parentesis de lugar sin que ello afecte al
+Se pueden cambiar los paréntesis de lugar sin que ello afecte al
 resultado.
 
 No se puede hacer a simple vista viendo la tabla de operación
@@ -30,7 +30,7 @@ No se puede hacer a simple vista viendo la tabla de operación
 
 Se dice que una operación $*$ tiene elemento neutro o identidad si:
 
-\$ ∃ e ∈ A : \forall a ∈ A : e \* a = a \* e = a \$
+$ ∃ e ∈ A : \forall a ∈ A : e * a = a * e = a $
 
 O sea que el elemento neutro de una operación cerrada es aquel que al
 estar operado con cualquier otro no afecta el resultado.
@@ -40,24 +40,24 @@ en el mismo orden que están dispuestos en la tabla.
 
 $\hspace{1pt}$
 
-### Elementos simetricos
+### Elementos simétricos
 
-Dado un elementro neutro $e$ el simetrico de un elemento $a$ se define:
+Dado un elemento neutro $e$ el simétrico de un elemento $a$ se define:
 
 $a' ∈ A : a * a' = a' * a = e$
 
-Si todos los elementos tienen simetrico se dice que $*$ tiene simetrico.
+Si todos los elementos tienen simétrico se dice que $*$ tiene simétrico.
 
-En la tabla se busca el simetrico de un elemento buscando en su fila y
+En la tabla se busca el simétrico de un elemento buscando en su fila y
 columna al elemento neutro.
 
 ### Conmutativa
 
-Se dice que una operación $*$ es conmutatica si:
+Se dice que una operación $*$ es conmutativa si:
 
 $\forall a, b ∈ A: a * b = b * a$
 
-La tabla debe ser simetrica respecto de su diagonal principal.
+La tabla debe ser simétrica respecto de su diagonal principal.
 
 ### Elementos idempotentes
 
@@ -73,9 +73,9 @@ dispuestos en el mismo orden de la tabla.
 
 ### Elemento absorbente
 
-Dado un elementro $b$ se dice que $b$ es absorbente si:
+Dado un elemento $b$ se dice que $b$ es absorbente si:
 
-\$\forall a ∈ A: b \* a = a \* b = b \$
+$\forall a ∈ A: b * a = a * b = b $
 
 Es decir que si existe un elemento absorbente, cuando se opera cualquier
 elemento $a$ el resultado siempre es $b$.
@@ -103,12 +103,12 @@ $$
 
 ### Propiedades de un grupo
 
-1.  El elemento neutro $e$ es unico.
+1.  El elemento neutro $e$ es único.
 2.  El elemento neutro es su propio simétrico $e' = e$
 3.  Propiedad involutiva del simétrico: $\forall a \in A: (a')' = a$
-4.  El simetrico de un elemento es único.
+4.  El simétrico de un elemento es único.
 5.  $\forall a,b \in A: (a*b) ' = b'*a'$
-6.  Las ecuaciones $a*x=b$ y $x*a=b$ tienen solución unica.
+6.  Las ecuaciones $a*x=b$ y $x*a=b$ tienen solución única.
 7.  El único elemento idempotente es el elemento neutro.
 8.  $\forall a,b \in A: a' = b \Rightarrow b'= a$
 
@@ -116,11 +116,11 @@ $$
 
 Sea $(A ; *)$ un semigrupo con neutro.
 
-El elemento \$ a ∈ A\$ es regular a izquierda $⇔ a * x = a *$ y entonces
-\$ x = y\$
+El elemento $ a ∈ A$ es regular a izquierda $⇔ a * x = a *$ y entonces
+$ x = y$
 
-El elemento $a ∈ A$ es regular a derecha $⇔ x * a = y * a$ entonces \$ x
-= y\$
+El elemento $a ∈ A$ es regular a derecha $⇔ x * a = y * a$ entonces $ x
+= y$
 
 El elemento $a ∈ A$ es regular si es regular a izquierda y a derecha.
 
@@ -130,7 +130,7 @@ pueden suprimir al estar operados en ambos miembros de una igualdad.
 ## Inversibles de un semigrupo
 
 Sea $(A ; *)$ un semigrupo con neutro. El conjunto de inversibles de $A$
-es: $INV (A) = \{ a ∈ A \;\;/\;\; a' ∈ A \}$
+es: $INV (A) = \{ a ∈ A / a' ∈ A \}$
 
 O sea, es el conjunto de todos los elementos que tienen simétrico en el
 conjunto $A$ respecto de la operación $*$.
@@ -139,7 +139,7 @@ conjunto $A$ respecto de la operación $*$.
 
 Sea $(G ; *)$ un grupo y sea $H ≠∅$ $H ⊆ G$.
 
-Si \$(H ; \*) \$ es grupo entonces $H$ es subgrupo de $G$.
+Si $(H ; *) $ es grupo entonces $H$ es subgrupo de $G$.
 
 En palabras, un subgrupo es un conjunto no vacío que está incluido en un
 grupo, y que en sí mismo también es grupo con la misma operación.
@@ -149,7 +149,7 @@ Sea $(G ; *)$ un grupo. $H$ es subgrupo de $G$ $⇔$\
 
 2\) $H ⊆ G$
 
-3\) \$\foralla,b ∈ H ⇒ a \* b'∈ H \$
+3\) $\forall a,b ∈ H ⇒ a * b'∈ H $
 
 Si afirmamos que $H$ cumple las tres condiciones ya podremos afirmar que
 $H$ es subgrupo de $G$.
@@ -168,10 +168,10 @@ Sea $(G ; *)$ un semigrupo con neutro $e$. Sea $∼$ una relación de
 equivalencia en $G$.
 
 $∼$ es compatible a izquierda con $*$
-$⇔ \foralla, b, x ∈ G : a ∼ b ⇒ x *a ∼ x *b$
+$⇔ \forall a, b, x ∈ G : a ∼ b ⇒ x *a ∼ x *b$
 
-$∼$ es compatible a derecha con \$\* \$ \$⇔ \foralla, b, x ∈ G : a ∼ b ⇒ a *x
-∼ b *x \$
+$∼$ es compatible a derecha con $* $ $⇔ \forall a, b, x ∈ G : a ∼ b ⇒ a *x
+∼ b *x $
 
 La relación $∼$ es compatible con $*$ (o es de congruencia)$⇔$ es
 compatible a derecha y a izquierda.
@@ -184,8 +184,8 @@ compatible a derecha y a izquierda.
 
 1.  Una forma equivalente de definir la compatibilidad es:
 
-La relación $∼$ es compatible con $*$ \$ ⇔\foralla, b, c, d ∈ G : a ∼ b ∧ c ∼
-d ⇒ a \* c ∼ b \* d\$
+La relación $∼$ es compatible con $*$ $ ⇔\forall a, b, c, d ∈ G : a ∼ b ∧ c ∼
+d ⇒ a * c ∼ b * d$
 
 ## Teorema fundamental de compatibilidad
 
@@ -195,7 +195,7 @@ equivalencia compatible con $∗$
 Entonces el conjunto cociente $(G/∼ ; \bar{∗})$ es un semigrupo con
 neutro, siendo la operación $\bar{∗}$ la siguiente:
 
-\$ \\bar{a}\\bar{∗}\\bar{b} = \\bar{a \* b}\$
+$ \bar{a}\bar{∗}\bar{b} = \bar{a * b}$
 
 Si $(G ; ∗)$ es grupo entonces $(G/∼ ; ∗)$ también es grupo.
 
@@ -212,18 +212,18 @@ reales a resolver.
 
 Sea $(G ; *)$ un grupo y $a ∈ G$ . Llamamos Subgrupo cíclico de $G$
 generado por $a$ al siguiente\
-conjunto: $< a > = \{ a^n \,\,/\,\, n ∈ \mathbb{Z} \}$
+conjunto: $< a > = \{ a^n / n ∈ \mathbb{Z} \}$
 
 ### Aclaraciones:
 
-$a^n$ significa \$a \* a \* a \* \.... \* a \$ ($n$ veces)
+$a^n$ significa $a * a * a * \.... * a $ ($n$ veces)
 
-$a^{-n}$ significa \$a\^{-1} \* a\^{-1} \* a\^{-1} \... \* a\^{-1} \$
+$a^{-n}$ significa $a\^{-1} * a\^{-1} * a\^{-1} \... * a\^{-1} $
 ($n$ veces, siendo $a^{-1}$ el simétrico de $a$)
 
-\$a\^0 = e \$(elemento neutro)
+$a\^0 = e $(elemento neutro)
 
-Es decir el conjunto \$\< a \> \$ tiene a todos los elementos que se
+Es decir el conjunto $< a > $ tiene a todos los elementos que se
 pueden obtener operando al elemento con sí mismo o con su simétrico.
 
 Si $(G ; *)$ un grupo, $a ∈ G$ y $< a > = G$ entonces $a$ es generador
@@ -240,11 +240,11 @@ subgrupo.
 
 Si $|< a >|= n$ entonces se dice que a tiene orden finito $n$.
 
-Si \$\|\< a \>\|= ∞ \$ entonces se dice que a tiene orden infinito.
+Si $|< a >|= ∞ $ entonces se dice que a tiene orden infinito.
 
-## Reticulo o Red de subgrupos
+## Retículo o Red de subgrupos
 
-Dado un grupo $(G ; *)$ con neutro \$e4, entonces el conjunto de todos
+Dado un grupo $(G ; *)$ con neutro $e4, entonces el conjunto de todos
 los subgrupos puede ser ordenado por la inclusión.
 
 Si $G$ es finito, entonces: $($subgrupos de $G ; ⊆)$ es una Red con
@@ -260,13 +260,13 @@ grupo y buscar si existen otros subgrupos no cíclicos.
 Sea $(G ; *)$ un grupo y $H$ un subgrupo de $G$. Definimos la siguiente
 relación en $G$:
 
-$a$ es congruente a derecha con $b$ módulo \$H ⇔ a \* b' ∈ H \$
+$a$ es congruente a derecha con $b$ módulo $H ⇔ a * b' ∈ H $
 
 Lo indicamos así: $a ≡_d b (H)$
 
 Análogamente, definimos la relación:
 
-$a$ es congruente a izquierda con $b$ módulo \$H ⇔ a' \* b ∈ H \$
+$a$ es congruente a izquierda con $b$ módulo $H ⇔ a' * b ∈ H $
 
 Lo indicamos así: $a ≡_i b (H)$
 
@@ -278,7 +278,7 @@ coincide con la congruencia a izquierda
 La relación de congruencia módulo $n$ en $\mathbb{Z}$ (estudiada
 anteriormente) es un caso particular de la congruencia módulo $H$,
 considerando
-$H = nZ = \{ x ∈ \mathbb{Z} \;/\; x = nk , k ∈ \mathbb{Z}\}$
+$H = nZ = \{ x ∈ \mathbb{Z} / x = nk , k ∈ \mathbb{Z}\}$
 
 La congruencia módulo $H$ , tanto a derecha como a izquierda, es una
 relación de equivalencia.
@@ -287,7 +287,7 @@ La clase de equivalencia de cualquier elemento $a$ de $G$ es:
 
 $\bar{a_d} = H * a$ (en la relación de congruencia a derecha)
 
-\$\\bar{a_i} = a \* H \$ (en la relación de congruencia a izquierda)
+$\bar{a_i} = a * H $ (en la relación de congruencia a izquierda)
 
 $|H|=|a*H|=|H*a|$
 
@@ -320,32 +320,32 @@ a izquierda.
 Sean $(G_1 ; *_1)$ y $(G_2 ;*_2)$ dos grupos con neutros $e_1$ y $e_2$
 respectivamente
 
-$f: G_1 → G_2$ es homomorfismo $⇔$ $f$ es función y \$\foralla, b ∈ G_1: f( a
-\*\_1 b) = f(a) \*\_2 f(b) \$
+$f: G_1 → G_2$ es homomorfismo $⇔$ $f$ es función y $\forall a, b ∈ G_1: f( a
+*_1 b) = f(a) *_2 f(b) $
 
 ### Clasificación de homomorfismos
 
 Sea $f : G_1 → G_2$ un homomorfismo de grupos:
 
-♦ Si $f$ es inyectiva, $f$ se llama monomorfismo
+- Si $f$ es inyectiva, $f$ se llama monomorfismo
 
-♦ Si $f$ es sobreyectiva, $f$ se llama epimorfismo
+- Si $f$ es sobreyectiva, $f$ se llama epimorfismo
 
-♦ Si $f$ es biyectiva, $f$ se llama isomorfismo
+- Si $f$ es biyectiva, $f$ se llama isomorfismo
 
-♦ Si $G_1 = G_2$ , $f$ se llama endomorfismo
+- Si $G_1 = G_2$ , $f$ se llama endomorfismo
 
-♦ Si $G_1 = G_2$ y $f$ es biyectiva, $f$ se llama automorfismo
+- Si $G_1 = G_2$ y $f$ es biyectiva, $f$ se llama automorfismo
 
 ### Imagen de un homomorfismo
 
 Sea $f: G_1 → G_2$ un homomorfismo. Se define:
-$Im(f) = \{ y ∈ G_2 \;/\; ∃ x ∈ G_1 ∧ f(x) = y \}$
+$Im(f) = \{ y ∈ G_2 / ∃ x ∈ G_1 ∧ f(x) = y \}$
 
 ### Preimagen o imagen recíproca
 
 Sea $f : G_1 → G_2$ un homomorfismo y sea $B ⊆ G_2$. Se define:
-$f^{-1}(B) = \{ x ∈ G_1 \;/\; f(x) ∈ B \}$
+$f^{-1}(B) = \{ x ∈ G_1 / f(x) ∈ B \}$
 
 Es decir, son todos los elementos de $G_1$ que tienen como imagen algún
 elemento de $B$.
