@@ -63,7 +63,7 @@
 
 @media (prefers-color-scheme: light) {
   .table-of-contents a:hover {
-    background-color: #c5c5c5;
+    background-color: #EBECF0;
   }
 
   .table-of-contents ul {

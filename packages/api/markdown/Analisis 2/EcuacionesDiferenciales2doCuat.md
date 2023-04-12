@@ -1,9 +1,9 @@
 
 # Ecuaciones diferenciales
 
-## Definición de campo escalar homogéneo
+## Campo escalar homogéneo
 
-Un campo escalar $f : D \subset \mathbb{R}\^n \rightarrow
+Un campo escalar $f : D \subset \mathbb{R}^n \rightarrow
 \mathbb{R}$ es homogéneo de grado $k$ si:
 
 $$
@@ -143,8 +143,7 @@ $$
 
 
 
-## Ecuaciones diferenciales totales exactas(E.D.T.E) {#ecuaciones-diferenciales-totales-exactasedte}
-
+## Ecuaciones diferenciales totales exactas
 $P(x,y)dx + Q(x,y)dy = 0 \hspace{5pt}(1) \hspace{15pt} P,Q \in C^1(D)$
 con $D$ abierto y simplemente conexo.
 

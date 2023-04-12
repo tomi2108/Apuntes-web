@@ -13,6 +13,7 @@
 }
 
 .nav-item a {
+  position: relative;
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -23,13 +24,30 @@
   color: inherit;
 }
 
+.nav-item a::after {
+  background: linear-gradient(to right, transparent, #2BCAB7, transparent);
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  bottom: -1px;
+  right: 65%;
+  content: '';
+  opacity: 0;
+  transition: right 300ms ease, opacity 300ms ease;
+}
+
+.nav-item a:hover:after {
+  right: 25%;
+  opacity: 1;
+}
+
 .nav-item a:hover {
   background-color: #343A46;
 }
 
 @media (prefers-color-scheme: light) {
   .nav-item a:hover {
-    background-color: #c5c5c5;
+    background-color: #EBECF0;
   }
 
   .nav-bar {
