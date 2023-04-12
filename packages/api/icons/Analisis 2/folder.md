@@ -1,3 +1,3 @@
 $$
-\int_{a}^{b}f(x)\cdot dx
+\int f(x,y)dx
 $$

@@ -1,3 +1,3 @@
 $$
-\iint
+\iint f \cdot dxdy
 $$

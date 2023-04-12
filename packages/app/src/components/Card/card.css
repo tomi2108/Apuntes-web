@@ -35,8 +35,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(2);
-  font-size: larger;
+  transform: scale(1.63);
+  font-size: large;
 }
 
 .card-image .math {

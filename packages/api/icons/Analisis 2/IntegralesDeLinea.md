@@ -1,3 +1,3 @@
 $$
-\oint_{C}
+\oint_{C} f \cdot ds
 $$

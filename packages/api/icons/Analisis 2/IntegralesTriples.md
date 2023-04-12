@@ -1,3 +1,3 @@
 $$
-\iiint
+\iiint f \cdot dxdydz
 $$

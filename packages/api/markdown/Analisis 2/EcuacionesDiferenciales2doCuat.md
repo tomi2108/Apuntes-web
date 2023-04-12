@@ -80,8 +80,7 @@ $$
 
 
 
-De $P(x,y)dx + Q(x,y)dy = 0$ se puede deducir: $ Q(x,y)dy = -P(x,y)dx
-$ y despues:
+De $P(x,y)dx + Q(x,y)dy = 0$ se puede deducir: $Q(x,y)dy = -P(x,y)dx$ y despues:
 
 
 $$

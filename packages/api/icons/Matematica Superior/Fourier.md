@@ -1,3 +1,3 @@
 $$
-\mathcal{F}
+\mathcal{F}(f)
 $$

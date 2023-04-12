@@ -1,3 +1,3 @@
 $$
-\mathcal{L}
+\mathcal{L}(f) = F(s)
 $$
