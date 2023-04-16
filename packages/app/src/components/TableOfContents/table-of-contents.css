@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 16.6vw;
+  width: 25vw;
   top: 60px;
   bottom: 0;
   position: fixed;
@@ -68,5 +68,10 @@
 
   .table-of-contents ul {
     background-color: #FFFFFF;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .table-of-contents{
+    display:none
   }
 }

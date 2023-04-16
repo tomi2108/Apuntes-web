@@ -1,0 +1,59 @@
+.menu{
+  transform: translate(-100%);
+  transition: transform 500ms ease-in-out;
+}
+
+.show{
+  transform: translate(0%);
+}
+
+@media only screen and (max-width: 600px) {
+  .line-cross{
+    background-color: white;
+    height: 40px;
+    width: 3px;
+    border-radius: 500px;
+    transform: rotateZ(45deg);
+  }
+  .flipped{
+    transform: rotateZ(-45deg);
+  }
+  .menu-icon {
+    width:48px;
+    height: 48px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 7%;
+    margin-top: 2%;
+    align-self: flex-start;
+  }
+  .menu {
+    box-sizing: border-box;
+    padding-block: 5px;
+    background-color: #32333b;
+    opacity: .9;
+    width: 100vw;
+    height: 100vh;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-links{
+    padding: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+}

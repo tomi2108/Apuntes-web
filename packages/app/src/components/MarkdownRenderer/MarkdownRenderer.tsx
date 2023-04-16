@@ -21,26 +21,30 @@ const MarkdownRenderer = ({ markdownContent }: { markdownContent: string }) => {
       .use(rehypeStringify);
     const tree = processor.parse(markdownContent);
     const hastTree = processor.runSync(tree);
-    const a = {
-      ...hastTree,
+    const toAdd: any[] = [];
+    hastTree?.children.forEach((e, i) => {
       //@ts-ignore
-      children: hastTree?.children.map((e) => {
+      if (e.tagName === "h1" || e.tagName === "h2") {
         //@ts-ignore
-        return e.tagName === "h1" || e.tagName === "h2"
-          ? {
-              ...e,
-              properties: {
-                //@ts-ignore
-                ...e.properties,
-                //@ts-ignore
-                id: generateId(e.children[0].value)
-              }
+        toAdd.push({
+          index: i,
+          value: {
+            type: "element",
+            tagName: "span",
+            properties: {
+              class: "anchor",
+              //@ts-ignore
+              id: generateId(e.children[0].value)
             }
-          : e;
-      })
-    };
+          }
+        });
+      }
+    });
+    toAdd.forEach((e) => {
+      hastTree.children.splice(e.index, 0, e.value);
+    });
     //@ts-ignore
-    setItems(processor.stringify(a));
+    setItems(processor.stringify(hastTree));
   }, [markdownContent]);
   return (
     <>

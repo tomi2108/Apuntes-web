@@ -1,11 +1,10 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify/lib";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype/lib";
 import { unified } from "unified";
-import { AppContext } from "../../App";
 import "./card.css";
 
 type CardProps = {
@@ -19,8 +18,6 @@ const isSvg = (icon: string): boolean => {
 };
 
 const Card = ({ text, onClick, icon }: CardProps) => {
-  const { articles } = useContext(AppContext);
-  console.log({ articles });
   const [iconString, setIconString] = useState<string>();
 
   useEffect(() => {
