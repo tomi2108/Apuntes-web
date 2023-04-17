@@ -6,6 +6,24 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #23272F;
+  background-image: radial-gradient(
+    circle,
+    transparent .25rem,
+    #23272F .25rem),
+    linear-gradient(
+      rgb(85,85,85) .125rem,
+      transparent .125rem
+    ),
+    linear-gradient(
+      90deg,
+    rgb(85, 85, 85) .125rem,
+      transparent .125rem
+    );
+    background-size: 3rem 3rem;
+    background-position: 4.575rem 3.575rem,
+    2rem 2rem, 3rem 3rem ;
+    animation: move-background infinite linear 2.75s;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,6 +32,26 @@
   -webkit-text-size-adjust: 100%;
 
 }
+
+@keyframes move-background{
+  0%{
+ background-position: 3.575rem 3.575rem,
+    2rem 2rem, 2rem 2rem ;
+  }
+  33%{
+     background-position: 4.575rem 3.575rem,
+    2rem 2rem, 3rem 3rem ;
+  }
+  66%{
+     background-position: 5.575rem 3.575rem,
+    2rem 2rem, 4rem 4rem ;
+  }
+  100%{
+     background-position: 6.575rem 3.575rem,
+    2rem 2rem, 5rem 5rem ;
+  }
+}
+
 
 ::-webkit-scrollbar {
   width: 0;
