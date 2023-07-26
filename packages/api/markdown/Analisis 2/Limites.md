@@ -19,36 +19,28 @@ Y $\lim_{\bar{x}\rightarrow\bar{x}_0}f(\bar{x}) = l_1$,
 $\lim_{\bar{x}\rightarrow\bar{x}_0}g(\bar{x}) = l_2$
 
 1.
+
 $$
 \lim_{\bar{x}\rightarrow\bar{x}_0}[f(\bar{x})+g(\bar{x})] = l_1 + l_2
 $$
 
-
-
-
 1.
+
 $$
 \lim_{\bar{x}\rightarrow\bar{x}_0}kf(\bar{x})=k \cdot l_1
 $$
 
-
-
-
 1.
+
 $$
 \lim_{\bar{x}\rightarrow\bar{x}_0}[f(\bar{x})\cdot g(\bar{x})]=l_1 \cdot l_2
 $$
 
-
-
-
 1.
+
 $$
 \lim_{\bar{x}\rightarrow\bar{x}_0}[\frac{f(\bar{x})}{g(\bar{x})}]=\frac{l_1}{l_2}
 $$
-
-
-
 
 1 y 2 también aplican para campos vectoriales.
 
@@ -57,18 +49,11 @@ $$
 Si $f(x,y) = h(x,y)g(x,y)$ y $h$ es una función acotada en un
 $E^*(x_0,y_0)$ y $g$ es un infinitésimo en $(x_0,y_0)$ entonces:
 
-
 $$
-
-
 
 \lim_{\bar{x}\rightarrow\bar{x}_0}f(x,y) = \lim_{\bar{x}\rightarrow\bar{x}_0}h(x,y)g(x,y)=0
 
 $$
-
-
-
-
 
 ## Funciones acotadas
 
@@ -76,31 +61,19 @@ $\large\begin{matrix} f_1(x,y)=\frac{x^2}{x^2+y^2}\\ f_2(x,y)=\frac{x}{\sqrt{x^2
 
 ## Limite importante
 
-
 $$
 \lim_{(x,y)\rightarrow(x_0,y_0)}f(x,y)=0 \Rightarrow \lim_{(x,y)\rightarrow(x_0,y_0)}\frac{\sin[f(x,y)]}{f(x,y)}=1
 $$
 
-
-
-
 ## Limites sucesivos o reiterados
-
 
 $$
 l_{12} = \lim_{y\rightarrow y_0}\lim_{x\rightarrow x_0}f(x,y)=0
 $$
 
-
-
-
-
 $$
 l_{21} = \lim_{x\rightarrow x_0}\lim_{y\rightarrow y_0}f(x,y)=0
 $$
-
-
-
 
 Si $\exists l, \exists l_{12}, \exists l_{21}$ entonces
 $l=l_{12}=l_{21}$
@@ -116,9 +89,6 @@ $(x,y)\rightarrow(x_0,y_0)$ por una curva $c_2$ siendo
 $$
 l_1 \neq l_2 \Rightarrow \nexists \lim_{(x,y)\rightarrow(x_0,y_0)}f (x,y)
 $$
-
-
-
 
 También podemos aproximarnos por una familia de rectas. Se los llama
 limites radiales $y-y_0 = m(x-x_0)$ y si el resultado del limite depende
@@ -139,9 +109,9 @@ $f: D_f \subset \mathbb{R}^n \rightarrow \mathbb{R}$,
 $g: D_g \subset \mathbb{R}^n \rightarrow \mathbb{R}$ dos campos
 escalares continuos en $\bar{x}_0$ entonces:
 
-1.  $f+g$ es continua en $\bar{x}_0$
-2.  $f\cdot g$ es continua en $\bar{x}_0$
-3.  $\frac{f}{g}$ es continua $g(\bar{x}_0)\neq 0$
+1. $f+g$ es continua en $\bar{x}_0$
+2. $f\cdot g$ es continua en $\bar{x}_0$
+3. $\frac{f}{g}$ es continua $g(\bar{x}_0)\neq 0$
 
 Las funciones polinomicas son continuas, con dominios adecuados la
 composición de funciones continuas es continua.

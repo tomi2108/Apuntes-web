@@ -19,7 +19,7 @@ La tabla debe contener solo elementos del conjunto.
 
 Se dice que una operación $*$ es asociativa si:
 
-$\forall a, b, c ∈ A : a * ( b * c ) = ( a * b ) * c $
+$\forall a, b, c ∈ A : a *( b* c ) = ( a *b )* c $
 
 Se pueden cambiar los paréntesis de lugar sin que ello afecte al
 resultado.
@@ -30,7 +30,7 @@ No se puede hacer a simple vista viendo la tabla de operación
 
 Se dice que una operación $*$ tiene elemento neutro o identidad si:
 
-$ ∃ e ∈ A : \forall a ∈ A : e * a = a * e = a $
+$ ∃ e ∈ A : \forall a ∈ A : e *a = a* e = a $
 
 O sea que el elemento neutro de una operación cerrada es aquel que al
 estar operado con cualquier otro no afecta el resultado.
@@ -44,7 +44,7 @@ $\hspace{1pt}$
 
 Dado un elemento neutro $e$ el simétrico de un elemento $a$ se define:
 
-$a' ∈ A : a * a' = a' * a = e$
+$a' ∈ A : a *a' = a'* a = e$
 
 Si todos los elementos tienen simétrico se dice que $*$ tiene simétrico.
 
@@ -55,7 +55,7 @@ columna al elemento neutro.
 
 Se dice que una operación $*$ es conmutativa si:
 
-$\forall a, b ∈ A: a * b = b * a$
+$\forall a, b ∈ A: a *b = b* a$
 
 La tabla debe ser simétrica respecto de su diagonal principal.
 
@@ -75,7 +75,7 @@ dispuestos en el mismo orden de la tabla.
 
 Dado un elemento $b$ se dice que $b$ es absorbente si:
 
-$\forall a ∈ A: b * a = a * b = b $
+$\forall a ∈ A: b *a = a* b = b $
 
 Es decir que si existe un elemento absorbente, cuando se opera cualquier
 elemento $a$ el resultado siempre es $b$.
@@ -90,12 +90,10 @@ $A$.
 
 Se dice que $•$ es distributiva respecto de $*$ si y solo si:
 
-
 $$
 \forall a, b, c ∈ A : a • ( b * c ) = ( a • b ) * ( a • c )\hspace{10pt}\text{(Distributiva a izquierda)} \\
 \forall a, b, c ∈ A : ( b * c ) • a = ( b • a ) * ( c • a )  \hspace{10pt}\text{(Distributiva a derecha)  }
 $$
-
 
 ## Grupos y semigrupos
 
@@ -103,23 +101,23 @@ $$
 
 ### Propiedades de un grupo
 
-1.  El elemento neutro $e$ es único.
-2.  El elemento neutro es su propio simétrico $e' = e$
-3.  Propiedad involutiva del simétrico: $\forall a \in A: (a')' = a$
-4.  El simétrico de un elemento es único.
-5.  $\forall a,b \in A: (a*b) ' = b'*a'$
-6.  Las ecuaciones $a*x=b$ y $x*a=b$ tienen solución única.
-7.  El único elemento idempotente es el elemento neutro.
-8.  $\forall a,b \in A: a' = b \Rightarrow b'= a$
+1. El elemento neutro $e$ es único.
+2. El elemento neutro es su propio simétrico $e' = e$
+3. Propiedad involutiva del simétrico: $\forall a \in A: (a')' = a$
+4. El simétrico de un elemento es único.
+5. $\forall a,b \in A: (a*b) ' = b'*a'$
+6. Las ecuaciones $a*x=b$ y $x*a=b$ tienen solución única.
+7. El único elemento idempotente es el elemento neutro.
+8. $\forall a,b \in A: a' = b \Rightarrow b'= a$
 
 ## Elementos regulares
 
 Sea $(A ; *)$ un semigrupo con neutro.
 
-El elemento $ a ∈ A$ es regular a izquierda $⇔ a * x = a *$ y entonces
+El elemento $ a ∈ A$ es regular a izquierda $⇔ a *x = a*$ y entonces
 $ x = y$
 
-El elemento $a ∈ A$ es regular a derecha $⇔ x * a = y * a$ entonces $ x
+El elemento $a ∈ A$ es regular a derecha $⇔ x *a = y* a$ entonces $ x
 = y$
 
 El elemento $a ∈ A$ es regular si es regular a izquierda y a derecha.
@@ -145,6 +143,7 @@ En palabras, un subgrupo es un conjunto no vacío que está incluido en un
 grupo, y que en sí mismo también es grupo con la misma operación.
 
 Sea $(G ; *)$ un grupo. $H$ es subgrupo de $G$ $⇔$\
+
 1) $H ≠∅$
 
 2\) $H ⊆ G$
@@ -157,7 +156,7 @@ $H$ es subgrupo de $G$.
 Si $H$ no cumple alguna de las tres condiciones ya podremos afirmar que
 $H$ NO es subgrupo de $G$.
 
-### Propiedad:
+### Propiedad
 
 Si $(G ; *)$ es un grupo y $H$ es un subconjunto **finito** no vacío,
 entonces $H$ es subgrupo de $G$ si y sólo si $*$ es cerrada en $H$.
@@ -168,9 +167,9 @@ Sea $(G ; *)$ un semigrupo con neutro $e$. Sea $∼$ una relación de
 equivalencia en $G$.
 
 $∼$ es compatible a izquierda con $*$
-$⇔ \forall a, b, x ∈ G : a ∼ b ⇒ x *a ∼ x *b$
+$⇔ \forall a, b, x ∈ G : a ∼ b ⇒ x*a ∼ x *b$
 
-$∼$ es compatible a derecha con $* $ $⇔ \forall a, b, x ∈ G : a ∼ b ⇒ a *x
+$∼$ es compatible a derecha con $*$ $⇔ \forall a, b, x ∈ G : a ∼ b ⇒ a*x
 ∼ b *x $
 
 La relación $∼$ es compatible con $*$ (o es de congruencia)$⇔$ es
@@ -178,14 +177,14 @@ compatible a derecha y a izquierda.
 
 ### Observaciones
 
-1.  Las relaciones de congruencia generalizan las propiedades de la
+1. Las relaciones de congruencia generalizan las propiedades de la
     congruencia módulo n y pueden recibir otros nombres como
     "compatible" respecto de la operación de grupo o "estable\".
 
-1.  Una forma equivalente de definir la compatibilidad es:
+1. Una forma equivalente de definir la compatibilidad es:
 
 La relación $∼$ es compatible con $*$ $ ⇔\forall a, b, c, d ∈ G : a ∼ b ∧ c ∼
-d ⇒ a * c ∼ b * d$
+d ⇒ a* c ∼ b * d$
 
 ## Teorema fundamental de compatibilidad
 
@@ -214,11 +213,11 @@ Sea $(G ; *)$ un grupo y $a ∈ G$ . Llamamos Subgrupo cíclico de $G$
 generado por $a$ al siguiente\
 conjunto: $< a > = \{ a^n / n ∈ \mathbb{Z} \}$
 
-### Aclaraciones:
+### Aclaraciones
 
-$a^n$ significa $a * a * a * \.... * a $ ($n$ veces)
+$a^n$ significa $a *a* a *\....* a $ ($n$ veces)
 
-$a^{-n}$ significa $a\^{-1} * a\^{-1} * a\^{-1} \... * a\^{-1} $
+$a^{-n}$ significa $a\^{-1} *a\^{-1}* a\^{-1} \... * a\^{-1} $
 ($n$ veces, siendo $a^{-1}$ el simétrico de $a$)
 
 $a\^0 = e $(elemento neutro)
@@ -227,7 +226,7 @@ Es decir el conjunto $< a > $ tiene a todos los elementos que se
 pueden obtener operando al elemento con sí mismo o con su simétrico.
 
 Si $(G ; *)$ un grupo, $a ∈ G$ y $< a > = G$ entonces $a$ es generador
-del grupo $G$ y el grupo $(G ; * )$ es cíclico porque tiene al menos un
+del grupo $G$ y el grupo $(G ;* )$ es cíclico porque tiene al menos un
 elemento generador.
 
 ## Orden de un elemento y de un subgrupo
@@ -270,7 +269,7 @@ $a$ es congruente a izquierda con $b$ módulo $H ⇔ a' * b ∈ H $
 
 Lo indicamos así: $a ≡_i b (H)$
 
-### Propiedades:
+### Propiedades
 
 Si $(G ; *)$ es un grupo abeliano, entonces la congruencia a derecha
 coincide con la congruencia a izquierda
@@ -321,7 +320,7 @@ Sean $(G_1 ; *_1)$ y $(G_2 ;*_2)$ dos grupos con neutros $e_1$ y $e_2$
 respectivamente
 
 $f: G_1 → G_2$ es homomorfismo $⇔$ $f$ es función y $\forall a, b ∈ G_1: f( a
-*_1 b) = f(a) *_2 f(b) $
+*_1 b) = f(a)*_2 f(b) $
 
 ### Clasificación de homomorfismos
 
@@ -352,7 +351,7 @@ elemento de $B$.
 
 ## Grupos isomorfos
 
-Sean $( G_1 ; *_1)$ y $(G_2 ; *_2)$ dos grupos.
+Sean $( G_1 ; *_1)$ y $(G_2 ;*_2)$ dos grupos.
 
 Diremos que son isomorfos si y solo si existe al menos un isomorfismo
 entre ellos.

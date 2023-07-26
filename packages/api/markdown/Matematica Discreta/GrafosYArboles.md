@@ -16,7 +16,7 @@ $\varphi$ : la función de incidencia : $A\rightarrow V^{(2)}$
 $V^{(2)}$ es el conjunto formado por subconjuntos de $1$ o $2$ elementos
 de $V$.
 
-### Ej:
+### Ej
 
 ![imagen.png](5a69562e-imagen.png)
 
@@ -64,8 +64,7 @@ M_a(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{
 \end{matrix}\right.
 $$
 
-
-### Ej:
+### Ej
 
 ![Grafos2.JPG](8b25dfc3-Grafos2.JPG)
 
@@ -84,7 +83,6 @@ M_i(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{
 \end{matrix}\right.
 $$
 
-
 Ejemplo para el mismo grafo anterior.
 
 ![imagen.png](3d6a3532-imagen.png)
@@ -102,11 +100,9 @@ En un grafo simple un vértice es aislado si y solo si su grado es cero.
 En todo grafo se cumple que la suma de los grados de los vértices es
 igual al doble de la cantidad de aristas.
 
-
 $$
 \large \sum g(v_i)= 2 |A|
 $$
-
 
 ## Caminos
 
@@ -140,7 +136,6 @@ O sea, los $K_n$ son grafos simples de $n$ vértices en los cuales cada
 vértice es adyacente a todos los demás.
 
 ![Grafos4.JPG](a8b470f3-Grafos4.JPG)
-
 
 ### Grafos bipartitos
 
@@ -179,10 +174,6 @@ aristas posibles.
 
 ![Grafos6.JPG](1abdd2c5-Grafos6.JPG)
 
-
-
-
-
 ## Subgrafos
 
 Dado un grafo $G = (V; A; \varphi )$ , se denomina subgrafo al grafo
@@ -193,8 +184,8 @@ $es la función restringida a $A'$
 
 Para obtener subgrafos de un grafo dado se puede:
 
-1.  suprimir uno o varios vértices y las aristas incidentes en ellos
-2.  suprimir solamente una o varias aristas.
+1. suprimir uno o varios vértices y las aristas incidentes en ellos
+2. suprimir solamente una o varias aristas.
 
 Si se suprime un vértice $v$, el subgrafo restante es $\tilde{G}_v$
 
@@ -208,7 +199,6 @@ define la siguiente relación:
 $$
 v_i R v_j \Leftrightarrow \exists \text{camino de}\hspace{5pt}\hspace{5pt} v_i \hspace{5pt}\hspace{5pt}\text{a}\hspace{5pt}\hspace{5pt} v_j \hspace{5pt}\hspace{5pt}\vee\hspace{5pt}\hspace{5pt} v_i = v_j
 $$
-
 
 Esta relación es de equivalencia y por lo tanto pueden hallarse las
 clases de equivalencia, a las que se denomina COMPONENTES CONEXAS.
@@ -261,15 +251,15 @@ las aristas una sola vez.
 La condición necesaria y suficiente para que en un grafo exista
 **camino** euleriano es:
 
-1.  El grafo debe ser conexo
-2.  Todos los vértices deben tener grado par, o a lo sumo dos grado
+1. El grafo debe ser conexo
+2. Todos los vértices deben tener grado par, o a lo sumo dos grado
     impar
 
 La condición necesaria y suficiente para que en un grafo exista
 **ciclo** euleriano es:
 
-1.  El grafo debe ser conexo
-2.  Todos los vértice deben tener grado par.
+1. El grafo debe ser conexo
+2. Todos los vértice deben tener grado par.
 
 ### Caminos y ciclos Hamiltonianos
 
@@ -289,11 +279,9 @@ Se dice que son isomorfos si y solo si existen dos funciones biyectivas:
 
 $f: V_1 \rightarrow V_2$ y $g : A_1 \rightarrow A_2$ tales que:
 
-
 $$
 \forall a \in A_1 :\varphi_2( g(a) ) = f( \varphi_1(a))
 $$
-
 
 Si no hay aristas paralelas, entonces es suficiente: $ \forall u,v
 \in V_1 : {u, v}\in A_1 \Rightarrow{ f(u), f(v) } \in A_2$
@@ -308,12 +296,12 @@ aunque estén dibujados de manera distinta.
 
 ### Condiciones necesarias para que dos grafos sean isomorfos
 
-1.  Deben tener la misma cantidad de vértices.
-2.  Deben tener la misma cantidad de aristas.
-3.  Deben tener los mismos grados de los vértices.
-4.  Deben tener cadenas de las mismas longitudes.
-5.  Si uno tiene ciclos, el otro también debe tenerlos.
-6.  Etc.
+1. Deben tener la misma cantidad de vértices.
+2. Deben tener la misma cantidad de aristas.
+3. Deben tener los mismos grados de los vértices.
+4. Deben tener cadenas de las mismas longitudes.
+5. Si uno tiene ciclos, el otro también debe tenerlos.
+6. Etc.
 
 Observación: las condiciones mencionadas **son necesarias** (es decir
 que sí o sí se deben cumplir para que los grafos sean isomorfos) pero
@@ -370,19 +358,19 @@ $g(v)$
 **GRADO NETO**: es la diferencia entre el grado positivo y el negativo.
 Se denota $g_N(v)$
 
-### Ej:
+### Ej
 
 ![Grafos7.JPG](0e712a08-Grafos7.JPG)
 
 ### Propiedades
 
-1.  $\sum g^+(v_i) = |A|$
+1. $\sum g^+(v_i) = |A|$
 
-2.  $\sum g^-(v_i) = |A|$
+2. $\sum g^-(v_i) = |A|$
 
-3.  $\sum g(v_i) = 2|A|$
+3. $\sum g(v_i) = 2|A|$
 
-4.  $\sum g_N(v_i) = 0$
+4. $\sum g_N(v_i) = 0$
 
 ## Pozos y fuentes
 
@@ -404,7 +392,6 @@ y $A = \{ a_1, a_2, ... , a_m \}$
 Se define la matriz de adyacencia de $G$ a una matriz booleana de
 $n\times n$:
 
-
 $$
 M_a(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{\begin{matrix}
 1 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}\exists a \in A: \delta(a) = (v_i ; v_j)\\
@@ -412,8 +399,7 @@ M_a(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{
 \end{matrix}\right.
 $$
 
-
-### Ej:
+### Ej
 
 ![Grafos8.JPG](0993a47b-Grafos8.JPG)
 
@@ -425,7 +411,6 @@ y $A = \{ a_1, a_2, ... , a_m \}$
 Si no tiene bucles ni aristas paralelas ,se define la matriz de
 incidencia de $G$ a una matriz de $n\times m$:
 
-
 $$
 M_i(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{\begin{matrix}
 1 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{es vértice inicial de}\hspace{5pt}\hspace{5pt} a_j\\
@@ -433,7 +418,6 @@ M_i(G) = (( m_{ij} ))   \text{tal que}\hspace{5pt}\hspace{5pt} m_{ij} =  \left\{
 0 \hspace{5pt}\text{si}\hspace{5pt}\hspace{5pt}v_i \hspace{5pt}\hspace{5pt}\text{no es extremo de}\hspace{5pt}\hspace{5pt} a_j
 \end{matrix}\right.
 $$
-
 
 Ejemplo para el mismo dígrafo anterior.
 
@@ -462,7 +446,6 @@ respetar el sentido de las aristas.
 
 Condición necesaria y suficiente para que exista **ciclo** de Euler en
 un dígrafo:
-
 
 $$
 \forall v \in  V : g^+(v) = g^-(v)
@@ -539,8 +522,8 @@ Podríamos decir que se reconocen como en el árbol genealógico.
 
 El **NIVEL DE UN VÉRTICE** se define en forma recursiva:
 
-1.  El nivel de la raíz es cero: $n(r) = 0 $
-2.  Cada vértice tiene un nivel mas que su padre.
+1. El nivel de la raíz es cero: $n(r) = 0 $
+2. Cada vértice tiene un nivel mas que su padre.
 
 **ALTURA** de un árbol: es el mayor **NIVEL** alcanzado por las
 **HOJAS**.

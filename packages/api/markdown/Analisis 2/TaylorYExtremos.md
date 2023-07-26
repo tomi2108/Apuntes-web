@@ -7,8 +7,6 @@
 
 ![TayloryExytremos2.JPG](d14dc32d-TayloryExytremos2.JPG)
 
-
-
 ## Polinomio de Taylor Orden 1
 
 ![TayloryExytremos3.JPG](cd1a64d5-TayloryExytremos3.JPG)

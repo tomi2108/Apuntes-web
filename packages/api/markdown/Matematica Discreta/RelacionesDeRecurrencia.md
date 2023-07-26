@@ -45,11 +45,11 @@ tanto de orden 1 como 2, homogéneas y no homogéneas**
 
 $a_n = k \cdot a_{n-1}$ con $k\in \mathbb{R}-\{0\}$
 
-### Solución:
+### Solución
 
 $a_n = k^n \cdot a_0$
 
-### Demostración:
+### Demostración
 
 $p(n): a_n = k^n \cdot a_0 \hspace{10pt} \forall n \geq 0$
 
@@ -58,7 +58,7 @@ $p(n): a_n = k^n \cdot a_0 \hspace{10pt} \forall n \geq 0$
 $n=0: \hspace{15pt} a_0 = k^0 \cdot a_0 = a_0 $ entonces se cumple
 que $p(0)$ es V
 
-#### Paso inductivo:
+#### Paso inductivo
 
 Hip. ind: $n=h \hspace{20pt} a_h=k^h \cdot a_0$
 
@@ -77,17 +77,13 @@ $c_n a_n + c\_{n-1}a\_{n-1}+ c\_{n-2} a\_{n-2} = 0 $
 
 Supongamos que $a_n = x^n$ es una solución de la ecuación.
 
-
 $$
 c_n x^n + c_{n-1}x^{n-1}+ c_{n-2} x^{n-2} = 0
 $$
 
-
-
 $$
 x^{n-2}\cdot (c_n x^2 + c_{n-1}x + c_{n-2} ) = 0
 $$
-
 
 $c_n x^2 + c_{n-1}x + c_{n-2}$ es la ecuación característica y sus
 raíces pueden ser: reales y distintas, reales e iguales o complejas
@@ -96,7 +92,6 @@ conjugadas
 Sean $r_1 $ y $r_2$ las raíces de la ecuación característica entonces
 la solución general será:
 
-
 $$
 \begin{matrix}
 \text{Reales y distintas} : a_n = k_1 \cdot (r_1)^n + k_2 \cdot (r_2)^n\\
@@ -104,8 +99,7 @@ $$
 \end{matrix}
 $$
 
-
-### Ej:
+### Ej
 
 Sea
 $a_n - 3 a_{n-1} + 2a_{n-2}= 0 \hspace{15pt} \text{con}\ a_0 = 4 \hspace{10pt}\wedge a_1 = 7$
@@ -113,7 +107,6 @@ $a_n - 3 a_{n-1} + 2a_{n-2}= 0 \hspace{15pt} \text{con}\ a_0 = 4 \hspace{10pt}\w
 Escribimos la ecuación característica y hallamos sus raíces, luego
 armamos un sistema de ecuaciones con las condiciones iniciales y
 buscamos las constantes de la solución general.
-
 
 $$
 \begin{matrix}
@@ -123,7 +116,6 @@ a_0 = k_1 + k_2 = 4 \wedge \ a_1 = k_1 + 2\cdot k_2 =7 \Rightarrow\\
 k_1=1 \wedge \ k_2=3 \Rightarrow a_n = 1+3\cdot 2^n
 \end{matrix}
 $$
-
 
 ## No homogéneas lineales de orden 1
 
@@ -153,7 +145,6 @@ La siguiente tabla muestra de que tipo es probable que exista una
 solución particular de acuerdo a la forma del término independiente de
 la ecuación:
 
-
 $$
 \begin{vmatrix}
 K(\text{constante}) & B(\text{constante})\\
@@ -164,8 +155,7 @@ K \cdot a^n & B \cdot a^n
 \end{vmatrix}
 $$
 
-
-### Ej:
+### Ej 2
 
 Resolver: $a_{n+1} = 2a_{n} + 1$ con $a_1 = 1$
 
@@ -178,11 +168,9 @@ el planteo también es una constante $B$. Es decir supongo que
 $a_{nP} = B$ Reemplazo en la ecuación original, para poder despejar el
 valor de $B$:
 
-
 $$
 a_{n+1}= 2a_n + 1 \Rightarrow B = 2B + 1 \Rightarrow B=-1 \Rightarrow a_{nP} = -1
 $$
-
 
 Formo la solución total: $a_n = a_{nH} + a_{nP} = k \cdot 2^n -1$
 
@@ -192,7 +180,6 @@ $$
 1=k\cdot 2 - 1 \Rightarrow k=1
 $$
 
-
 Por lo tanto $a_n = 2\^n -1 $ es la solución particular pedida.
 
 ## No homogéneas lineales de orden 2
@@ -201,7 +188,7 @@ $c_n \cdot a_n + c_{n-1} \cdot a_{n-1}+ c_{n-2} \cdot a_{n-2} = f(n)$
 
 $a_n = a_{nH} + a_{nP}$
 
-### Ej
+### Ej 3
 
 Resolver:
 $a_{n+2} - 4a_{n+1} +3a_n = -2 \hspace{15pt} \text{con}\hspace{15pt} a_0 = 7 \\wedge\ a_1 = 12$

@@ -6,17 +6,15 @@
 Esta ecuación nos describe la aceleración de un movimiento armonico
 simple en base a la posición y se cumple para cualquier sistema.
 
-
 $$
 \large a= \frac{d^2 x(t)}{dt^2} = -C\cdot x (t)
 $$
-
 
 La solución para la ecuacion general de un MAS es:
 
 ![MOA1.JPG](34a6cf3a-MOA1.JPG)
 
-#### Significado fisico de las constantes:
+### Significado fisico de las constantes
 
 **Amplitud**: es el máximo desplazamiento de la partícula o cuerpo con
 respecto a su posición de equilibrio. Puede ser lineal o angular.
@@ -36,7 +34,7 @@ completa.
 **Frecuencia**: Es el numero de oscilaciones que se realiza en un
 segundo. $f=\frac{1}{T}$ y se mide en $\frac{1}{s} = Hz$
 
-### Notas:
+### Notas
 
 La velocidad es máxima o mínima en el punto de equilibrio y es $0$ enm
 los extremos de la oscilación.
@@ -45,7 +43,6 @@ La aceleración es cero en el punto de equilibrio y es maxima o minima en
 los extremos de la oscilación.
 
 ### Sistema masa-resorte
-
 
 $$
 \begin{matrix}
@@ -57,9 +54,7 @@ a(t) = -\frac{k}{m} \cdot x(t)\\
 \end{matrix}
 $$
 
-
 ### Sistema pendulo ideal
-
 
 $$
 
@@ -67,23 +62,13 @@ $$
 
 $$
 
-
 ### Sistema péndulo fisico
-
 
 $$
 
 \omega^2 = \frac{mgd}{I^{eje}_{cr}} \Rightarrow T = \frac{2\pi}{\omega} = 2\pi \cdot \sqrt{\frac{I^{eje}_{cr}}{mgd}}
 
 $$
-
-
-
-
-
-
-
-
 
 ## Energía en un MAS
 

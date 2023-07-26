@@ -1,11 +1,9 @@
 
 # Congruencia
 
-
 $$
 a R b \Leftrightarrow a\equiv b(n) \Leftrightarrow n|a-b
 $$
-
 
 La congruencia en modulo n es una relación de equivalencia, por lo tanto
 es **reflexiva, simétrica y transitiva**
@@ -18,7 +16,6 @@ $$
 \bar{x} : \{y\in \mathbb{Z} / y=nk+x \,\,\text{con}\,\, k \in \mathbb{Z}\}
 $$
 
-
 Es decir, en la clase de $x$ están todos los enteros cuyo resto al
 dividir por $n$ es $x$.
 
@@ -28,17 +25,14 @@ $$
 Z_n = \{\bar{0},\bar{1}, \bar{2},\cdots ,\bar{n-1}\}
 $$
 
-
 Está formado por las clases residuales, son todos los restos posibles al
 dividir por $n$.
 
-### Propiedad
-
+## Propiedad
 
 $$
 \forall x,y \in \mathbb{Z}:\;\;x\in \bar{a}(n) \,\,\wedge\,\,y\in\bar{b}(n) \Rightarrow x+y \in \bar{a+b}(n)
 $$
-
 
 Es decir, al sumar dos elementos de clases de equivalencia no importa
 que elemento se tome de cada clase, el resultado de la operación siempre
@@ -46,19 +40,15 @@ pertenece a la misma clase.
 
 Lo mismo ocurre con el producto:
 
-
 $$
 \forall x,y \in \mathbb{Z}:\;\;x\in \bar{a}(n) \,\,\wedge\,\,y\in\bar{b}(n) \Rightarrow x \cdot y \in \bar{a\cdot b}(n)
 $$
 
-
 ## Función de Euler
-
 
 $$
 \varphi(n)= |\{x\in\mathbb{N}/x\leq n \,\, \wedge \,\, (x,n)=1\}|
 $$
-
 
 Esta función se aplica a los números enteros positivos, y nos da la
 cantidad de números menores o iguales al dado que son coprimos con dicho
@@ -66,33 +56,26 @@ numero.
 
 ### Propiedades de la función de Euler
 
-1.  Si p es un número primo, entonces:
+1. Si p es un número primo, entonces:
 $$
 \varphi(p)= p-1,
 $$
 
-
-2.  Si $n$ es un numero natural cualquiera y $p$ es un numero primo:
+2. Si $n$ es un numero natural cualquiera y $p$ es un numero primo:
 $$
 \varphi(p^n)= p^{n-1}(p-1)
 $$
 
-
-
-3.  Si $n,m \in \mathbb{N}$ y $m.c.d(n,m) = 1$ entonces:
+3. Si $n,m \in \mathbb{N}$ y $m.c.d(n,m) = 1$ entonces:
 $$
 \varphi(n\cdot m) = \varphi(n)  \cdot \varphi(m)
 $$
 
-
-
 Para cualquier $n$:
-
 
 $$
 \varphi(n) = n\prod_{p_i|n}(1-\frac{1}{p_i})
 $$
-
 
 Siendo $p_i$ los primos divisores de $n$.
 
@@ -110,7 +93,7 @@ menor que $n$ no se cumple la congruencia entonces $n$ es compuesto.
 Nosotros vamos a utilizarlo para hallar el resto de la división de un
 numero entero por un numero primo.
 
-### Ej:
+### Ej
 
 Calculemos el resto de la división de $7^{122}$ por $11$.
 
@@ -127,7 +110,7 @@ Entonces: $7^{122} \equiv 7^2(11) = 5$
 
 Si $m.c.d(a,n) = 1 \Rightarrow a^{\varphi(n)} \equiv 1(n)$
 
-### Ej
+### Ej 2
 
 Calculemos el resto de dividir $8^{1791485}$ por $21$.
 
@@ -148,8 +131,9 @@ Como $8^{12}\equiv 1(21)$ entonces $8^{1791485}\equiv 1 \cdot 8^5
 
 Y ya tenemos un número bastante mas chico, aunque lo podemos escribir
 por ejemplo:
-$$8^5 = 8^2 \cdot 8^2 \cdot 8$ y como
 $$
+8^5 = 8^2 \cdot 8^2 \cdot 8 $$
+y como
 $$
 8^2 = 64 \equiv 1(21)\Rightarrow 8^5 \equiv 8 (21)
 $$
@@ -179,7 +163,7 @@ la solución será: $x = a^{\varphi(n)-1} \cdot b$
 $a\cdot x \equiv b(n)$ admite solución $\Leftrightarrow m.c.d(a,n)|b$ la
 cantidad de soluciones es $m.c.d (a,n)$ y difieren en $n$
 
-## Propiedad {#propiedad}
+## Propiedad 2
 
 Si $a\cdot c \equiv b \cdot c (n)$ y $m.c.d(c,n) = 1$ entonces:
 
