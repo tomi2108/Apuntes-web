@@ -2,7 +2,7 @@ import cors from "cors";
 import express from "express";
 import path from "path";
 
-const api = express();
+const api: express.Express = express();
 
 import articlesRouter from "./routes/articles";
 import { unknownEndpoint } from "./utils/middleware";
