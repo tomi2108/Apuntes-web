@@ -14,45 +14,32 @@ export const AppContext = createContext<{ articles: Folder[] | null }>({
 const App = () => {
   const { articles } = useArticles();
   const context = { articles };
-  const router = articles
-    ? createBrowserRouter([
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <NavbarWrapper />,
+      children: [
         {
           path: "/",
-          element: <NavbarWrapper />,
-          children: [
-            {
-              path: "/",
-              element: <Home />
-            },
-            {
-              path: "/subjects",
-              element: (
-                <Subjects
-                  folders={
-                    articles.map((a) => ({
-                      folder: a.folder,
-                      icon: a.icon
-                    })) ?? []
-                  }
-                />
-              )
-            },
-            {
-              path: "/articles/:folder/:title",
-              element: <ArticleViewer />
-            }
-          ]
+          element: <Home />
+        },
+        {
+          path: "/subjects",
+          element: <Subjects />
+        },
+        {
+          path: "/articles/:folder/:title",
+          element: <ArticleViewer />
         }
-      ])
-    : null;
+      ]
+    }
+  ]);
 
   return (
     <>
-      {router ? (
-        <AppContext.Provider value={context}>
-          <RouterProvider router={router} />
-        </AppContext.Provider>
-      ) : null}
+      <AppContext.Provider value={context}>
+        <RouterProvider router={router} />
+      </AppContext.Provider>
     </>
   );
 };

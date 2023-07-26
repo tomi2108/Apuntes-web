@@ -1,14 +1,21 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { AppContext } from "../../App";
 import Articles from "../../components/Articles";
 import Card from "../../components/Card/Card";
 import { useSlider } from "../../hooks/useSlider";
 import "./subjects.css";
 
-type SubjectsProps = {
-  folders: Array<{ folder: string; icon: string }>;
-};
+const Subjects = () => {
+  const { articles } = useContext(AppContext);
 
-const Subjects = ({ folders }: SubjectsProps) => {
+  const folders: Array<{ folder: string; icon: string }> =
+    articles?.map((a) => ({
+      folder: a.folder,
+      icon: a.icon
+    })) ?? [];
+
+  console.log(folders);
+
   const [selectedFolder, setSelectedFolder] = useState<string>("");
   const [foldersElem, setFoldersElem] = useState<Element | null>(null);
   const [articlesElem, setArticlesElem] = useState<Element | null>(null);
