@@ -10,7 +10,7 @@ Un numero complejo es la suma entre un numero real y uno imaginario y se
 suelen llamar $z$ tal que: $$z=a+bi$$ Con $a \in \mathbb{R}$,
 $b \in \mathbb{R}$ y $z \in \mathbb{C}$\
 
-Representación geometrica en el plano complejo\
+Representación geometrica en el plano complejo
 
 Los complejos pueden representarse en un plano mediante pares ordenados
 de numeros reales, esto se debe al isomorfismo que tiene
@@ -129,9 +129,10 @@ y &= \sqrt{\frac{|z|-a}{2}}  \end{aligned}$$ Es decir:
 $$
 u = \pm\sqrt{\frac{|z|+a}{2}}  \pm i\sqrt{\frac{|z|-a}{2}}
 $$
-Lo cualnos dá como resultado $4$ posibles raices, pero sabemos que por el
+Lo cual nos dá como resultado $4$ posibles raices, pero sabemos que por el
 teorema fundamental del algebra, todo polinomio de grado $2$ tiene
-exactamente $2$ raices en el conjunto de los complejos.\
+exactamente $2$ raices en el conjunto de los complejos.
+
 Podemos reestringir $2$ raices y dejarlas fuera gracias a la ecuación
 $(11)$. Recordemos que estamos calculando $\sqrt{z}$. Los distintos
 valores de $u$ vienen dados por los signos de $x$ e $y$. Por la ecuación
@@ -142,10 +143,11 @@ podemos resolver la distorsión. Si $b$ es positivo tendremos dos
 soluciónes para $\sqrt{z}$, una donde $x$ e $y$ son positivos y otra
 donde $x$ e $y$ son negativos. Si $b$ es negativo aún tendremos dos
 soluciones pero en una de estas $x$ será positivo e $y$ negativo y en la
-otra $x$ será negativo e $y$ positivo.\
+otra $x$ será negativo e $y$ positivo.
+
 Observación: La formula resolvente es aplicable a complejos, siempre y
 cuando se realicen las operaciones como están definidas en el campo
-complejo.\
+complejo.
 
 ## Forma polar de un complejo
 
@@ -158,8 +160,9 @@ $\varphi$ tal que $\rho = |z|$ y $\varphi = \arg(z)$. Observar que
 $\varphi$ o $\arg(z)$ es el ángulo que el vector asociado al numero
 complejo $z$ forma con el semieje real positivo.
 
-![image](../../../Imagenes/Superior/Complejos/Complejos02.PNG)\
-Relación entre forma binomica y polar.\
+![image](../../../Imagenes/Superior/Complejos/Complejos02.PNG)
+
+Relación entre forma binomica y polar.
 
 Por pitagoras es muy sencillo encontrar la siguiente relación:
 $$
@@ -177,11 +180,13 @@ $$
 $$
 Estas formulas se deducen sencillamente con algunas propiedades de trigonometria y sin
 duda son ciertas y muy utiles pero, para algunos casos especiales, hay
-que pensar un poco mas.\
+que pensar un poco mas.
+
 Por ejemplo, ¿Qué pasa si $a=0$ ? Entonces el numero es imaginario puro,
 ya que $a$ es la parte real. Los numeros imaginarios puros se encuentran
 sobre el eje imaginario (o eje de ordenadas) es decir, su argumento será
-de $\frac{\pi}{2}$ o bien $3\frac{\pi}{2}$ dependiendo de su signo.\
+de $\frac{\pi}{2}$ o bien $3\frac{\pi}{2}$ dependiendo de su signo.
+
 Pero aún hay un problema, la función $\tan(x) = y$ no es biyectiva en
 todo el dominio y por lo tanto se utiliza con el dominio reestringido a
 $(-\frac{\pi}{2};\frac{\pi}{2})$ para que exista su inversa
@@ -195,7 +200,8 @@ segundo o tercer cuadrante.
 Veremos un ejemplo para clarificar todo este palabrerio. Escribamos en
 polar el siguiente numero: $-1 + i \sqrt{3}$\
 Primero que nada notemos que como $a$ es negativo y $b$ positivo,
-sabemos que el numero se encuentra en el segundo cuadrante.\
+sabemos que el numero se encuentra en el segundo cuadrante.
+
 Ahora calculemos el modulo que es bastante sencillo:
 $$
 \rho =  \sqrt{(-1)^{2} + (\sqrt{3})^{2}} = 2
@@ -208,7 +214,7 @@ Pensamos un poco y nos damos cuenta que un argumento de $-\frac{\pi}{3}$
 deja el complejo en el cuarto cuadrante, pero el complejo original se
 encontraba en el segundo.
 
-![image](../../../Imagenes/Superior/Complejos/Complejos03.PNG)\
+![image](../../../Imagenes/Superior/Complejos/Complejos03.PNG)
 Aquí se nota porque se debe sumar $\pi$ o medio giro para obtener el
 argumento del complejo original. Y nuestro complejo queda:
 $$
@@ -229,9 +235,7 @@ No entraremos en detalle sobre la demostración de esta formula, pero recomiendo
 fuertemente buscar información al respecto porque la demostración es una
 de las mas bellas de las matematias. Para la materia solo la tomaremos
 como verdadera y diremos que la forma exponencial de un numero complejo
-$z$ es $\rho e^{i\varphi}$ donde $\rho = |z|$ y $\varphi = \arg(z)$. De
-aquí además es de donde sale la bella identidad: $e^{i\pi} + 1 = 0$ ya
-que $-1$ tiene modulo $1$ y argumento $\pi$.
+$z$ es $\rho e^{i\varphi}$ donde $\rho = |z|$ y $\varphi = \arg(z)$. De aquí además es de donde sale la bella identidad: $e^{i\pi} + 1 = 0$ ya que $-1$ tiene modulo $1$ y argumento $\pi$.
 
 ### Operaciones en forma polar
 
@@ -269,36 +273,34 @@ vista.
 
 #### Potencias naturales en forma Polar
 
-Con $n \in \mathbb{N}$ $$z^{n} = [\rho^{n}; n\cdot\varphi]$$ Esta
-formula se puede deducir sencillamente reflexionando sobre la
-demostración de la multiplicacion presentada anteriormente.\
+Con $n \in \mathbb{N}$ $$z^{n} = [\rho^{n}; n\cdot\varphi]$$ Esta formula se puede deducir sencillamente reflexionando sobre la
+demostración de la multiplicacion presentada anteriormente.
 
 #### Raiz n-ésima
 
 Como vimos, en la forma binomica solo es posible calcular raices
 cuadradas, o en su defecto, raices potencias de $2$ ya que estas pueden
 descomponerse en raices cuadradas. Gracias a la forma polar podemos
-resolver raices n-ésimas de un complejo.\
+resolver raices n-ésimas de un complejo.
 Sea $z = [\rho;\varphi]$ y $w = [r;\theta]$ una raíz n-ésima de z tal
 que $w^{n} = z$. Entonces se deduce:
-$$w^{n} = z \Rightarrow [r^{n};n\theta] = [\rho;\varphi]$$ Y por
-igualdad de complejos: $$\begin{aligned}
+$$w^{n} = z \Rightarrow [r^{n};n\theta] = [\rho;\varphi]$$ Y por igualdad de complejos: $$\begin{aligned}
   r^{n} &= \rho\\
-  n\theta &= \varphi +2k\pi \\\end{aligned}$$\
+  n\theta &= \varphi +2k\pi \\\end{aligned}$$
 $$
 \begin{aligned}
   r &= \sqrt[n]{\rho}\\
   \theta &= \frac{\varphi+2k\pi}{n}\end{aligned}
   $$
-Finalmente, con $0 < k < n-1$: $$w_k = [\sqrt[n]{\rho};\frac{\varphi+2k\pi}{n}]$$\
+Finalmente, con $0 < k < n-1$: $$w_k = [\sqrt[n]{\rho};\frac{\varphi+2k\pi}{n}]$$
 Importante: cuando $k=n$ obtenemos $w_0$, por eso $k$ va de $0$ a $n-1$,
 luego empiezan a repetirse. Además, por convención, antes de calcular
 raices n-ésimas se escribe al complejo en su primer giro positivo. De
 esta forma, las raices quedan ordendas a partir del semieje positivo
-real en sentido positivo (antihorario).\
-\
+real en sentido positivo (antihorario).
+
 Representacion geometrica\
-\
+
 Como $|w_k|$ no depende de $k$ entonces:
 $$
 |w_0| = |w_1| = |w_2| = |w_{n-1}| = \sqrt[n]{\rho}
@@ -314,7 +316,7 @@ circunferencia de radio $\sqrt[n]{\rho}$ centrada en el origen.
 
 #### Ejemplo: la grafica de las $\sqrt[3]{-8i}$
 
-![image](../../../Imagenes/Superior/Complejos/Complejos04.PNG)\
+![image](../../../Imagenes/Superior/Complejos/Complejos04.PNG)
 
 ### Raices primitivas de la unidad
 
@@ -328,22 +330,22 @@ sucede cuando $w_k$ es una raiz nueva que no apareció en ningun orden
 anterior a $n$. Como las raices primitivas se calculan sobre la unidad,
 todas las raices tendrán modulo igual a $1$ ya que
 $\sqrt[n]{1} = 1 \hspace{5pt} \forall n \in \mathbb{N}$ y esto hace que
-haya raices repetidas en los distintos órdenes.\
+haya raices repetidas en los distintos órdenes.
 
-Algunas propiedades:\
+Algunas propiedades:
 $a)$ $w_0$ nunca es primitiva porque vale $1$ para todos los órdenes de
-$n$\
+$n$
 $b)$ $w_1$ siempre es primitiva ya que cada vez que aumentamos el orden
 $n$, las divisiones del giro se hacen mas pequeñas y al tener raices
 equiespaciadas, los espacios entre raices se harán mas pequeños al
 aumentar el orden de $n$. Y al ser $w_1$ la primer raíz de un orden en
-particular, esta nunca existirá en algún otro orden inferior.\
+particular, esta nunca existirá en algún otro orden inferior.
 $c)$ $w_k$ es primitiva $\Leftrightarrow m.c.d(k;n) = 1$ ya que si no se
-cumple esto significa que la raíz existe en un orden inferior.\
+cumple esto significa que la raíz existe en un orden inferior.
 
 Por ejemplo: En el orden $6$ las raices primitivas son $w_1$ y $w_5$, en
 cambio $w_4$ ya es raiz en un orden anterior. Mas concretamente es $w_2$
-del orden $3$.\
+del orden $3$.
 
 Si este tema no se entiende bien recordar que $n$ es el orden de las
 raices y nos dice cuantas raices hay en total en ese orden (contando
@@ -351,7 +353,7 @@ $w_0$) y $k$ es la numeración de cada raíz en particular dentro de un
 orden $n$. Además recordar que todas las raices tienen el mismo modulo,
 por ende lo unico que las diferencia es el giro, esto hace que una raiz
 pueda tener como argumento un multiplo de otra y por esto repetirse en
-ordenes inferiores.\
+ordenes inferiores.
 
 ### Logaritmo natural
 
@@ -370,7 +372,7 @@ $$
   u_k &= ln(\rho) + i (\varphi + 2k\pi)\end{aligned}
 $$
 Cuando $k=0$ y $\varphi \in [0;2\pi)$ se define el valor principal de $\ln(z)$:
-$V.P(\ln z)  = \ln (\rho) + i\varphi$\
+$V.P(\ln z)  = \ln (\rho) + i\varphi$
 
 Importante notar que el logaritmo toma un numero en forma polar
 $[\rho;\varphi]$ y lo devuelve en forma binomica. Además el logaritmo
@@ -378,9 +380,9 @@ tiene infinitas soluciones, y como la parte real de las mismas no
 depende de $k$ entonces todas se encuentran en la misma recta vertical
 $x=\ln\rho$. Para realizar calculos y cuando el logaritmo se encuentre
 afectado por otras operaciones se tomará el valor principal como el
-unico valor.\
+unico valor.
 
-Potencia compleja de un complejo.\
+Potencia compleja de un complejo.
 
 Sea $z = z_1^{z_2}$:
 $$
@@ -400,21 +402,21 @@ bien, con su respectivo desplazamiento:
 $$
 f(t) = A\cos(\omega t + \varphi)
 $$
-Donde:\
-$t$: Variable tiempo en segundos.\
-$A$: Amplitud de onda o valor de pico.\
-$\omega$: Pulsación o frecuencia angular.\
-$f$: Frecuencia de vibración.\
-$T$: Período.\
-$\varphi$: Ángulo de fase inicial.\
-Además:\
-$f=\frac{1}{T}$\
-\
-$\omega = 2\pi f$\
-\
+Donde:
+$t$: Variable tiempo en segundos.
+$A$: Amplitud de onda o valor de pico.
+$\omega$: Pulsación o frecuencia angular.
+$f$: Frecuencia de vibración.
+$T$: Período.
+$\varphi$: Ángulo de fase inicial.
+Además:
+$f=\frac{1}{T}$
+
+$\omega = 2\pi f$
+
 Veremos como usar vectores complejos giratorios para representar estas
 funciones por mas que sean de variable real.\
-\
+
 Ya sabemos que $z=re^{i\varphi}$ es la representación exponencial de un
 numero complejo de módulo $r$ y argumento $\varphi$. Si ahora
 consideramos $\varphi=\omega t$ obtenemos la expresión
@@ -434,12 +436,12 @@ proyeccion de un vector giratorio sobre un eje fijo es una magnitud que
 varia sinusoidalmente.
 
 El fenómeno expresado por la función senoidal se denomina Vibración
-armonica simple.\
-\
-Fasores\
-\
+armonica simple.
+
+Fasores
+
 Sea $A(t) = A_m \cos(\omega t +\varphi)$. Se puede interpretar como:
-$A(t) = Re[A_m \cos(\omega t +\varphi) + i A_m \sin(\omega t +\varphi)]$.\
+$A(t) = Re[A_m \cos(\omega t +\varphi) + i A_m \sin(\omega t +\varphi)]$.
 Se puede deducir: $$A(t) = Re[A_m e^{i(\omega t + \varphi)}]$$ Donde:
 $$A_m e^{i(\omega t + \varphi)} = A_m e^{i\varphi}e^{i\omega t}$$
 
@@ -450,10 +452,10 @@ fasor. Es decir, una cantidad fasorial es una instánea de la exponencial
 compleja tomada para $t=0$.
 
 Siempre que haya que trabajar con funciones sinusoidales será, en
-general, mas sencillo trabajar con sus respectivos asores.\
-\
-Superposición de ondas de la misma frecuencia.\
-\
+general, mas sencillo trabajar con sus respectivos asores.
+
+Superposición de ondas de la misma frecuencia.
+
 Sean $g_1(t) = A_1 \cos(\omega t)$ y
 $g_2(t) = A_2 \cos(\omega t + \varphi)$
 
@@ -469,19 +471,19 @@ Que se puede escribir $(A_1 + A_2 e^{i\varphi}) = Me^{i\theta}$.
 El diagrama vectorial se suele trazar para un instante determinado, pero
 como la diferencia de fase es constante y la frecuencia angular es
 igual, el paralelogramo gira como una figura rígida con una velocidad
-angular $\omega$.\
-\
+angular $\omega$.
+
 Entonces:
 $$g_1(t) + g_2(t) = Re[e^{i\theta}e^{i\omega t}] \Rightarrow g_1(t)+g_2(t) = M \cos(\omega t +\theta)$$
 
 ![image](../../../Imagenes/Superior/Complejos/Complejos08.PNG)
 
 Veremos un ejemplo para que se entienda mejor:\
-\
+
 Dados: $V_1(t) = 10\cos(3t-\frac{\pi}{3})$ y
 $V_2(t) = 5\cos(3t+5\frac{\pi}{12})$.\
-Hallar: $V_1(t) + V_2(t)$ utilizando fasores.\
-\
+Hallar: $V_1(t) + V_2(t)$ utilizando fasores.
+
 Buscamos los fasores: $$\begin{aligned}
   V_1 &= 10 e^{-i\frac{\pi}{3}}\\
   V_2 &= 5 e^{i5\frac{\pi}{12}}\end{aligned}$$
@@ -500,5 +502,4 @@ $$
  $$
  V_1+V_2 = 7.36e^{-i0.55}
  $$
- Finalmente lo multiplicamos por $e^{i\omega t}$ que en este caso $\omega = 3$: $$7.36e^{i(3t-0.55)}$$ Y
-por ultimo tomamos la parte real: $$V_1(t)+V_2(t) = 7.36\cos(3t-0.55)$$
+ Finalmente lo multiplicamos por $e^{i\omega t}$ que en este caso $\omega = 3$: $$7.36e^{i(3t-0.55)}$$ Y por ultimo tomamos la parte real: $$V_1(t)+V_2(t) = 7.36\cos(3t-0.55)$$

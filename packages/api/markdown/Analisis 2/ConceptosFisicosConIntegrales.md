@@ -83,7 +83,7 @@ $$
 $$
 
 $$
-\left\{\begin{matrix} \cos (t_1)=0\\ \sin (t_1)=1\\ \cos\^2
+\left\{\begin{matrix} \cos (t_1)=0\\ \sin (t_1)=1\\ \cos^2
 (t_1)=0 \end{matrix}\right. \Rightarrow t_1=\frac{\pi}{2}
 $$
 
